@@ -1,4 +1,9 @@
+
 import nodemailer from 'nodemailer';
+
+// Debug: Log environment variables
+console.log('EMAIL_USER:', process.env.EMAIL_USER);
+console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
 
 // Gmail SMTP setup
 const transporter = nodemailer.createTransport({
