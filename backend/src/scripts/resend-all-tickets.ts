@@ -290,11 +290,11 @@ async function resendAllTickets() {
                       </div>
                       <div class="info-row">
                         <span class="info-label">📅 Event Date</span>
-                        <span class="info-value">January 20, 2026</span>
+                        <span class="info-value">January 7, 2026</span>
                       </div>
                       <div class="info-row">
                         <span class="info-label">🕐 Time</span>
-                        <span class="info-value">10:00 AM onwards</span>
+                        <span class="info-value">04:05 PM onwards</span>
                       </div>
                       <div class="info-row">
                         <span class="info-label">📍 Venue</span>

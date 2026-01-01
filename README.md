@@ -76,7 +76,7 @@ MAX_SEATS=500
 
 # Event Config
 EVENT_NAME="Rupaayi Fest 2026"
-EVENT_DATE="January 20, 2026"
+EVENT_DATE="January 7, 2026"
 EVENT_VENUE="Auditorium, Gitam University BLR"
 ```
 

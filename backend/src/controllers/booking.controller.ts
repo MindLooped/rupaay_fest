@@ -163,7 +163,7 @@ export const bookSeatController = async (
       ticketsCount: 1,
       qrCode,
       eventName: 'Rupaayi Fest 2026',
-      eventDate: 'Monday, January 20, 2026',
+      eventDate: 'Monday, January 7, 2026',
       seatNumber: seatNumber,
       seatNumbers,
       studentDetails,
@@ -184,7 +184,7 @@ export const bookSeatController = async (
         seatNumber: s.seatNumber
       })),
       eventName: 'Rupaayi Fest 2026',
-      eventDate: 'January 20, 2026',
+      eventDate: 'January 7, 2026',
       venue: 'Auditorium, Gitam University BLR'
     });
 
@@ -254,7 +254,7 @@ export const resendTicketController = async (
       ticketsCount: booking.students.length,
       qrCode,
       eventName: 'Rupaayi Fest 2026',
-      eventDate: 'Monday, January 20, 2026',
+      eventDate: 'Monday, January 7, 2026',
       seatNumber: seatNumbers,
       seatNumbers,
       studentDetails,

@@ -73,7 +73,7 @@ export function appendBookingToCSV(bookingData: {
       escapeCSVField(bookingData.registrationNumber),
       escapeCSVField(bookingData.seatNumber),
       escapeCSVField(bookingData.eventName || 'Rupaayi Fest'),
-      escapeCSVField(bookingData.eventDate || 'January 20, 2026'),
+      escapeCSVField(bookingData.eventDate || 'January 7, 2026'),
       escapeCSVField(bookingData.venue || 'Auditorium, Gitam University BLR'),
       escapeCSVField(bookingData.paymentId || 'N/A'),
       escapeCSVField(bookingData.paymentAmount || 0)
@@ -120,7 +120,7 @@ export function appendMultipleStudentsToCSV(bookingData: {
         escapeCSVField(student.registrationNumber),
         escapeCSVField(student.seatNumber),
         escapeCSVField(bookingData.eventName || 'Rupaayi Fest'),
-        escapeCSVField(bookingData.eventDate || 'January 20, 2026'),
+        escapeCSVField(bookingData.eventDate || 'January 7, 2026'),
         escapeCSVField(bookingData.venue || 'Auditorium, Gitam University BLR'),
         escapeCSVField(bookingData.paymentId || 'N/A'),
         escapeCSVField(bookingData.paymentAmount || 0)
