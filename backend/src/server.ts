@@ -1,16 +1,16 @@
+
+import dotenv from 'dotenv';
+dotenv.config();
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import dotenv from 'dotenv';
 import path from 'path';
 
 import bookingRoutes from './routes/booking.routes';
 import adminRoutes from './routes/admin.routes';
 import paymentRoutes from './routes/payment.routes';
 import { initializeCSV } from './utils/csv-logger';
-
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 4000;
