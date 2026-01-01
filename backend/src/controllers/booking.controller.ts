@@ -47,7 +47,17 @@ export const getAvailableSeatsController = async (
       },
     });
     const bookedSeats = students.map(s => s.seatNumber);
-    res.json({ bookedSeats });
+      // Add A1-B28 as booked by default
+      const defaultBooked = [];
+      for (let row of ['A', 'B']) {
+        const max = row === 'A' ? 28 : 28;
+        for (let i = 1; i <= max; i++) {
+          defaultBooked.push(`${row}${i}`);
+        }
+      }
+      // Merge and deduplicate
+      const allBooked = Array.from(new Set([...bookedSeats, ...defaultBooked]));
+      res.json({ bookedSeats: allBooked });
   } catch (error) {
     next(error);
   }

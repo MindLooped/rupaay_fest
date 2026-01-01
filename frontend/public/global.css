@@ -77,3 +77,11 @@ button, .btn, a {
     display: none !important;
   }
 }
+
+.booked {
+  background-color: #d3d3d3 !important; /* light grey */
+  color: #888 !important;
+  pointer-events: none;
+  opacity: 0.7;
+  border: 1px solid #aaa;
+}
