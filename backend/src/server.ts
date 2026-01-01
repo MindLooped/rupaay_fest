@@ -73,7 +73,7 @@ async function bookDefaultSeats() {
   for (const seat of seatNumbers) {
     const exists = await prisma.student.findFirst({ where: { seatNumber: seat } });
     if (!exists) {
-      // Create a dummy booking for each seat
+      // Create a dummy booking for each seat (MongoDB compatible)
       await prisma.booking.create({
         data: {
           reference: `DEFAULT-${seat}`,

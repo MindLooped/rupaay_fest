@@ -19,7 +19,7 @@ export async function createBooking(input: CreateBookingInput) {
     throw new Error('This email has already booked a ticket');
   }
 
-  // Check total seats available
+  // Check total seats available (MongoDB)
   const totalBooked = await prisma.booking.count();
   const maxSeats = parseInt(process.env.TOTAL_SEATS || '500');
   if (totalBooked >= maxSeats) {
@@ -27,8 +27,9 @@ export async function createBooking(input: CreateBookingInput) {
   }
 
   // Generate reference
+  // MongoDB does not support autoincrement, so use count or timestamp for reference
   const bookingCount = await prisma.booking.count();
-  const reference = generateBookingReference(bookingCount + 1);
+  const reference = generateBookingReference(Date.now());
 
   // Generate QR code
   const qrCode = await generateTicketQR(reference, email, name);
@@ -94,17 +95,13 @@ export async function getAllBookings(page = 1, limit = 50, search?: string) {
 }
 
 export async function getBookingStats() {
-  const [total, uniqueEmails] = await Promise.all([
-    prisma.booking.count(),
-    prisma.booking.groupBy({
-      by: ['email'],
-      _count: true,
-    }),
-  ]);
-
+  // MongoDB: groupBy is not supported, so use findMany and count unique emails manually
+  const total = await prisma.booking.count();
+  const allBookings = await prisma.booking.findMany({ select: { email: true } });
+  const uniqueEmails = new Set(allBookings.map(b => b.email));
   return {
     totalBookings: total,
-    uniqueUsers: uniqueEmails.length,
+    uniqueUsers: uniqueEmails.size,
     availableSeats: parseInt(process.env.TOTAL_SEATS || '500') - total,
   };
 }

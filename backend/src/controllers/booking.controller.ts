@@ -46,6 +46,7 @@ export const getAvailableSeatsController = async (
         seatNumber: true,
       },
     });
+    // MongoDB: no change needed, but ensure logic is compatible
     const bookedSeats = students.map(s => s.seatNumber);
     res.json({ bookedSeats });
   } catch (error) {
