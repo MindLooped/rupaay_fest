@@ -1,0 +1,48 @@
+// Prisma schema for PostgreSQL
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Booking {
+  id                 Int      @id @default(autoincrement())
+  reference          String   @unique
+  name               String
+  email              String
+  ticketsCount       Int      @default(1) @map("tickets_count")
+  qrCode             String?  @map("qr_code")
+  status             String   @default("pending")
+  verificationCode   String?  @map("verification_code")
+  isVerified         Boolean  @default(false) @map("is_verified")
+  seatNumber         String?  @map("seat_number")
+  eventName          String   @default("Rupaayi Fest") @map("event_name")
+  eventLocation      String   @default("Gitam University BLR") @map("event_location")
+  venue              String   @default("Auditorium") @map("venue")
+  createdAt          DateTime @default(now()) @map("created_at")
+  eventDate          DateTime? @map("event_date")
+  students           Student[]
+
+  @@unique([email])
+  @@unique([seatNumber])
+  @@index([email])
+  @@index([reference])
+  @@index([createdAt(sort: Desc)])
+  @@map("bookings")
+}
+
+model Student {
+  id                 Int      @id @default(autoincrement())
+  bookingId          Int      @map("booking_id")
+  booking            Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  seatNumber         String   @map("seat_number")
+  name               String
+  registrationNumber String   @map("registration_number")
+  gitamEmail         String   @map("gitam_email")
+  createdAt          DateTime @default(now()) @map("created_at")
+
+  @@map("students")
+}

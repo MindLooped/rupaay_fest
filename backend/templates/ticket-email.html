@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed</title>
+</head>
+<body style="margin:0;padding:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#6a8dff 0%,#a084ee 100%);min-height:100vh;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:none;padding:32px 0;">
+    <tr>
+      <td align="center">
+        <table width="480" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);">
+          <tr>
+            <td style="padding:0;">
+              <div style="padding:32px 0 0 0;text-align:center;">
+                <span style="display:inline-block;background:#e9e9fc;color:#3b3b5b;font-size:15px;font-weight:600;padding:7px 22px;border-radius:18px;letter-spacing:1px;margin-bottom:18px;">BOOKING CONFIRMED</span>
+                <h1 style="margin:0;font-size:2rem;color:#3b3b5b;font-weight:800;">{{eventName}}</h1>
+                <div style="color:#6a8dff;font-size:1.1rem;margin-bottom:8px;">Your Ticket is Ready! 🎉</div>
+              </div>
+              <!-- Booking Reference -->
+              <div style="margin:32px 32px 0 32px;background:linear-gradient(90deg,#f857a6 0%,#ff5858 100%);border-radius:14px;text-align:center;padding:18px 0;">
+                <div style="color:#fff;font-size:15px;font-weight:600;letter-spacing:1px;">BOOKING REFERENCE</div>
+                <div style="color:#fff;font-size:1.5rem;font-weight:800;letter-spacing:2px;margin-top:6px;">{{reference}}</div>
+              </div>
+              <!-- Event Details -->
+              <div style="margin:24px 32px 0 32px;background:linear-gradient(120deg,#ffe0c3 0%,#ffcfd2 100%);border-radius:14px;padding:18px 20px 18px 20px;border:2px dashed #f857a6;">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border:none;">
+                  <tr>
+                    <td style="vertical-align:top;width:32px;padding-right:8px;"><img src="https://img.icons8.com/color/48/000000/calendar--v1.png" width="28" height="28" alt="Date"/></td>
+                    <td style="font-size:15px;color:#3b3b5b;font-weight:600;">DATE & TIME<br><span style="font-weight:400;color:#222;">{{eventDate}}</span></td>
+                  </tr>
+                  <tr><td colspan="2" height="8"></td></tr>
+                  <tr>
+                    <td style="vertical-align:top;width:32px;padding-right:8px;"><img src="https://img.icons8.com/color/48/000000/marker.png" width="28" height="28" alt="Venue"/></td>
+                    <td style="font-size:15px;color:#3b3b5b;font-weight:600;">VENUE<br><span style="font-weight:400;color:#222;">{{venue}}</span></td>
+                  </tr>
+                  <tr><td colspan="2" height="8"></td></tr>
+                  <tr>
+                    <td style="vertical-align:top;width:32px;padding-right:8px;"><img src="{{posterUrl}}" width="28" height="28" alt="Poster" style="border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.10);"/></td>
+                    <td style="font-size:15px;color:#3b3b5b;font-weight:600;">SEATS BOOKED<br><span style="font-weight:400;color:#222;">{{seatNumbers}}</span></td>
+                  </tr>
+                  <tr><td colspan="2" height="8"></td></tr>
+                  <tr>
+                    <td></td>
+                    <td style="font-size:14px;color:#3b3b5b;font-weight:400;">{{ticketsCount}} Seat</td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Student Details -->
+              <div style="margin:24px 32px 0 32px;background:#f8f9ff;border-radius:14px;padding:18px 20px 18px 20px;">
+                <div style="font-size:1.1rem;font-weight:700;color:#222;margin-bottom:8px;">Student Details</div>
+                <div style="font-size:15px;color:#222;line-height:1.6;">{{studentDetails}}</div>
+              </div>
+              <!-- QR Code -->
+              <div style="display:flex;justify-content:center;margin:24px 0 0 0;">
+                <img src="cid:qrcode@ticket" alt="QR Code" style="width:120px;height:120px;background:#fff;border-radius:12px;padding:8px;box-shadow:0 2px 12px rgba(0,0,0,0.10);">
+              </div>
+              <!-- Note Message -->
+              <div style="background:#fef2f2;color:#f84464;padding:14px 18px;border-radius:12px;margin:24px 32px 0 32px;font-size:1.08rem;font-weight:600;text-align:center;">
+                <strong>Please Note:</strong> This e-ticket confirms your seat booking only. <u>This is not your final entry pass.</u> To attend the event, you must collect your official <b>physical pass</b> from our Box Office at the venue. Details about the Box Office location and timings will be announced soon on our official social media channels. Stay tuned!
+              </div>
+              <div style="height:32px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="background:#f8f9ff;padding:20px;text-align:center;border-top:1px solid #e0e0e0;">
+              <p style="color:#999;font-size:12px;margin:0;">
+                This is an automated email. Please do not reply.<br>
+                © 2025 {{eventName}}. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

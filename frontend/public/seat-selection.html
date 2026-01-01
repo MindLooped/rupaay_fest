@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Seat - Rupaayi Fest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+      
+      /* Adjust header for mobile */
+      .header-container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+      
+      /* Make seats appropriately sized for mobile */
+      .seat {
+        width: 26px !important;
+        height: 26px !important;
+        margin: 2px !important;
+        font-size: 9px !important;
+      }
+      
+      /* Stage adjustments */
+      .stage {
+        padding: 12px 20px !important;
+        font-size: 11px !important;
+        margin-bottom: 20px !important;
+        max-width: 90% !important;
+        letter-spacing: 1px !important;
+      }
+      
+      /* Quantity options */
+      .quantity-option {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 16px !important;
+      }
+      
+      /* Seat map scrollable */
+      #seat-map {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 20px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      /* Add scroll indicator */
+      #seat-map-step::after {
+        content: '← Swipe to see all seats →';
+        display: block;
+        text-align: center;
+        font-size: 11px;
+        color: #9ca3af;
+        margin-top: 10px;
+        animation: fadeInOut 2s infinite;
+      }
+      
+      @keyframes fadeInOut {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+      }
+      
+      /* Row labels */
+      .row-label {
+        font-size: 11px !important;
+        min-width: 20px !important;
+      }
+      
+      /* Event info adjustments */
+      .event-info-container {
+        flex-direction: column;
+        gap: 16px;
+      }
+      
+      .event-price {
+        text-align: left !important;
+      }
+      
+      /* Modal adjustments */
+      .modal-content {
+        width: 95%;
+        max-width: 95%;
+        margin: 10px;
+      }
+      
+      .modal-content h2 {
+        font-size: 1.5rem !important;
+      }
+      
+      .modal-content h3 {
+        font-size: 1rem !important;
+      }
+      
+      /* Legend adjustments */
+      .legend-container {
+        flex-direction: column;
+        gap: 12px !important;
+      }
+      
+      /* Selection counter */
+      #seats-to-select {
+        font-size: 1.75rem !important;
+      }
+      
+      /* Buttons */
+      button {
+        font-size: 15px !important;
+        padding: 14px 24px !important;
+      }
+      
+      /* Container padding */
+      .max-w-6xl {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+      }
+      
+      /* Card padding */
+      .bg-white.rounded-lg {
+        padding: 16px !important;
+      }
+    }
+    
+    /* Extra small devices */
+    @media (max-width: 480px) {
+      .seat {
+        width: 20px !important;
+        height: 20px !important;
+        margin: 1.5px !important;
+        font-size: 7px !important;
+      }
+      
+      .row-label {
+        font-size: 9px !important;
+        min-width: 16px !important;
+      }
+      
+      .stage {
+        font-size: 10px !important;
+        padding: 10px 15px !important;
+      }
+      
+      #seat-map {
+        padding: 10px 30px !important;
+      }
+    }
+    
+    /* Ensure seat rows are visible */
+    .seat-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: max-content;
+    }
+    
+    @keyframes logoAppear {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .quantity-option {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: #f0f0f0;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
+    
+    .quantity-option:hover {
+      background: #e0e0e0;
+    }
+    
+    .quantity-option.selected {
+      background: #ec5e71;
+      color: white;
+    }
+    
+    .seat {
+      width: 24px;
+      height: 24px;
+      margin: 3px;
+      border-radius: 3px 3px 0 0;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      font-weight: 600;
+      position: relative;
+    }
+    
+    .seat.available {
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #666;
+    }
+    
+    .seat.available:hover {
+      background-color: #f0d89e;
+      border-color: #d4af37;
+      transform: scale(1.1);
+      overflow: hidden;
+    }
+    
+    .seat.available:hover::before {
+      content: '';
+    }
+    
+    .seat.available:hover::after {
+      content: '';
+    }
+    
+    .seat.selected {
+      background-color: #f0d89e;
+      border: 2px solid #d4af37;
+      transform: scale(1.15);
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+      position: relative;
+      overflow: visible;
+    }
+    
+    .seat.selected::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background: url('tamashaa-logo.png') center center / contain no-repeat;
+      z-index: 2;
+      animation: logoAppear 0.5s ease-out;
+      pointer-events: none;
+    }
+    
+    .seat.selected::after {
+      content: '';
+    }
+    
+    .seat.booked {
+      background: #ddd;
+      color: #999;
+      cursor: not-allowed;
+      border: 1px solid #ccc;
+    }
+    
+    .stage {
+      background: linear-gradient(180deg, #d4e9f7 0%, #b8d9ed 100%);
+      color: #555;
+      padding: 25px 60px;
+      border-radius: 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 40px;
+      border: 2px solid #a8c5db;
+      letter-spacing: 2px;
+      position: relative;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    
+    .stage::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-top: 3px solid #fff;
+      border-radius: inherit;
+      opacity: 0.4;
+    }
+    
+    .stage::after {
+      content: none;
+    }
+    
+    .row-label {
+      font-weight: 600;
+      color: #999;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+    
+    /* Modal styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    .modal-content {
+      background: white;
+      padding: 0;
+      border-radius: 16px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      animation: slideUp 0.4s ease-out;
+      overflow: hidden;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .pulse-animation {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  
+  <!-- Disclaimer Modal -->
+  <div id="disclaimer-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div style="background-color: rgb(43, 49, 72);" class="p-6 text-center">
+        <div class="text-6xl mb-3 pulse-animation">⚠️</div>
+        <h2 class="text-2xl font-bold text-white mb-2">Important Notice</h2>
+        <p class="text-white text-sm mb-4">Please read carefully before proceeding</p>
+      </div>
+      
+      <div class="p-6">
+        <div class="bg-gray-50 border-l-4 border-gray-400 p-4 mb-4 rounded">
+          <h3 class="text-lg font-bold text-black mb-3">One Ticket Per Person Policy</h3>
+          <p class="text-gray-700 leading-relaxed mb-3">
+            To ensure fairness and prevent duplications, we are limiting registrations to 
+            <strong class="text-gray-800">ONE ticket per person</strong> for your enjoyment.
+          </p>
+          <p class="text-gray-600 text-sm">
+            Each email address can only book <strong>one seat</strong>. Multiple bookings from the same email will be rejected.
+          </p>
+        </div>
+        
+        <div class="text-center text-sm text-gray-600 italic mb-4">
+          Please understand our concern. - Team Tamashaa 🎭
+        </div>
+        
+        <div class="flex items-start mb-4 p-3 bg-blue-50 rounded">
+          <div class="text-xl mr-3">ℹ️</div>
+          <p class="text-sm text-gray-700">
+            By clicking "I Understand", you agree to this policy and confirm that you will book only one ticket.
+          </p>
+        </div>
+        
+        <button 
+          id="accept-disclaimer" 
+          style="background-color: rgb(43, 49, 72); color: #fff; border: none;"
+          class="w-full font-bold py-4 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+          ✓ I Understand - Proceed to Seat Selection
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <div class="bg-white shadow-sm border-b">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between header-container">
+      <h1 class="text-xl font-bold text-gray-800">Rupaayi Fest</h1>
+      <div class="text-sm text-gray-600">
+        <span class="font-semibold" id="user-email"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Event Info -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+      <div class="flex items-start justify-between event-info-container">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">Rupaayi Fest 2026</h2>
+          <p class="text-gray-600 mb-1">📅 January 20, 2026 | ⏰ 10:00 AM</p>
+          <p class="text-gray-600">📍 Auditorium, Gitam University BLR</p>
+        </div>
+        <div class="text-right event-price">
+          <p class="text-3xl font-bold text-green-600">One Rupee</p>
+          <p class="text-sm text-gray-500">General Admission</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 1: Quantity Selection (HIDDEN - Limited to 1 seat) -->
+    <div id="quantity-step" class="bg-white rounded-lg shadow-sm p-8 mb-6 hidden">
+      <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">How many seats?</h3>
+      
+      <!-- Icon -->
+      <div class="text-center mb-8">
+        <div class="text-8xl" id="quantity-icon">🚲</div>
+      </div>
+        
+      <div class="flex justify-center gap-3 mb-8">
+        <div class="quantity-option selected" data-quantity="1">1</div>
+        <div class="quantity-option" data-quantity="2">2</div>
+        <div class="quantity-option" data-quantity="3">3</div>
+        <div class="quantity-option" data-quantity="4">4</div>
+        <div class="quantity-option" data-quantity="5">5</div>
+        <div class="quantity-option" data-quantity="6">6</div>
+        <div class="quantity-option" data-quantity="7">7</div>
+        <div class="quantity-option" data-quantity="8">8</div>
+        <div class="quantity-option" data-quantity="9">9</div>
+        <div class="quantity-option" data-quantity="10">10</div>
+      </div>
+      
+      <div class="text-center">
+        <button id="continue-btn" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-12 rounded transition-colors">
+          Select Seats
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 2: Seat Map -->
+    <div id="seat-map-step" class="bg-white rounded-lg shadow-sm p-6">
+      <div class="flex items-center justify-between mb-6">
+        <div class="w-32"></div>
+        <div class="text-center">
+          <p class="text-sm text-gray-600">Select your seat</p>
+          <p class="text-2xl font-bold text-red-500" id="seats-to-select">1</p>
+        </div>
+        <div class="w-32"></div>
+      </div>
+
+      <!-- Legend -->
+      <div class="flex justify-center gap-6 mb-6 p-4 bg-gray-50 rounded legend-container">
+        <div class="flex items-center gap-2">
+          <div class="seat available" style="margin: 0;"></div>
+          <span class="text-sm text-gray-600">Available</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="seat selected" style="margin: 0;"></div>
+          <span class="text-sm text-gray-600">Selected</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="seat booked" style="margin: 0;"></div>
+          <span class="text-sm text-gray-600">Booked</span>
+        </div>
+      </div>
+
+      <!-- Stage -->
+      <div class="stage">All eyes this way please</div>
+
+      <!-- Seat Map -->
+      <div id="seat-map" class="flex flex-col items-center gap-1 mb-8">
+        <!-- Seats generated by JavaScript -->
+      </div>
+
+      <!-- Selection Info -->
+      <div id="selection-info" class="hidden">
+        <div class="bg-green-50 border border-green-200 rounded p-4 mb-6">
+          <p class="text-center text-green-800 font-semibold">
+            Selected: <span id="selected-seats-display" class="font-bold"></span>
+          </p>
+        </div>
+        
+        <!-- Student Forms -->
+        <div id="students-forms-container" class="space-y-4 mb-6">
+          <!-- Forms generated by JavaScript -->
+        </div>
+        
+        <button id="confirm-btn" class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-4 rounded transition-colors">
+          Block your Seat →
+        </button>
+      </div>
+
+      <!-- Error Message -->
+      <div id="error-message" class="hidden mt-4 bg-red-50 border border-red-200 rounded p-4">
+        <p class="text-sm text-red-800 text-center" id="error-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/seat-selection.js"></script>
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-bottom-nav md:hidden">
+    <a href="index.html"><i class="fas fa-home"></i><div style="font-size:10px">Home</div></a>
+    <a href="event-details.html"><i class="fas fa-ticket-alt"></i><div style="font-size:10px">Events</div></a>
+    <a href="seat-selection.html" class="active"><i class="fas fa-chair"></i><div style="font-size:10px">Seats</div></a>
+    <a href="verification.html"><i class="fas fa-user-check"></i><div style="font-size:10px">Verify</div></a>
+  </nav>
+</body>
+</html>
