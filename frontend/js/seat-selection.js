@@ -124,13 +124,16 @@ function generateSeatMap() {
   SEATING_LAYOUT.forEach(rowConfig => {
     const rowDiv = document.createElement('div');
     rowDiv.className = 'flex items-center gap-1 justify-center';
-    
+
     // Row label
     const labelDiv = document.createElement('div');
     labelDiv.className = 'row-label';
     labelDiv.textContent = rowConfig.row;
     rowDiv.appendChild(labelDiv);
-    
+
+    // Helper: block rows A and B
+    const isBlockedRow = rowConfig.row === 'A' || rowConfig.row === 'B';
+
     // Left side: seats 1 to aisleAfter
     for (let i = 1; i <= rowConfig.aisleAfter; i++) {
       const seatNumber = `${rowConfig.row}${i}`;
@@ -138,22 +141,22 @@ function generateSeatMap() {
       seatDiv.className = 'seat';
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
-      
-      if (bookedSeats.includes(seatNumber)) {
+
+      if (isBlockedRow || bookedSeats.includes(seatNumber)) {
         seatDiv.classList.add('booked');
       } else {
         seatDiv.classList.add('available');
         seatDiv.addEventListener('click', () => selectSeat(seatNumber));
       }
-      
+
       rowDiv.appendChild(seatDiv);
     }
-    
+
     // Center aisle
     const aisle = document.createElement('div');
     aisle.className = 'w-8';
     rowDiv.appendChild(aisle);
-    
+
     // Right side: seats (aisleAfter + 1) to total seats
     for (let i = rowConfig.aisleAfter + 1; i <= rowConfig.seats; i++) {
       const seatNumber = `${rowConfig.row}${i}`;
@@ -161,17 +164,17 @@ function generateSeatMap() {
       seatDiv.className = 'seat';
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
-      
-      if (bookedSeats.includes(seatNumber)) {
+
+      if (isBlockedRow || bookedSeats.includes(seatNumber)) {
         seatDiv.classList.add('booked');
       } else {
         seatDiv.classList.add('available');
         seatDiv.addEventListener('click', () => selectSeat(seatNumber));
       }
-      
+
       rowDiv.appendChild(seatDiv);
     }
-    
+
     seatMap.appendChild(rowDiv);
   });
 }
