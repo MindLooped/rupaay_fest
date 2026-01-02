@@ -79,7 +79,8 @@ export async function sendTicketEmail(data: TicketEmailData): Promise<void> {
     console.log('✅ Ticket email sent to:', data.email);
   } catch (error) {
     console.error('❌ Failed to send ticket email:', error);
-    throw error;
+    console.warn('⚠️  Booking will continue without email - please fix email configuration');
+    // Don't throw error - allow booking to succeed even if email fails
   }
 }
 
