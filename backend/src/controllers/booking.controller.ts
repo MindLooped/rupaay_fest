@@ -124,10 +124,11 @@ export const bookSeatController = async (
       return;
     }
 
-    // Check if seat is in blocked rows
+    // Check if seat is in blocked range (A1-A28, B1-B28)
     const seatNumber = students[0].seatNumber;
-    if (seatNumber.startsWith('A') || seatNumber.startsWith('B')) {
-      res.status(400).json({ success: false, error: `Seats in rows A and B are not available for booking.` });
+    const blockedPattern = /^(A|B)([1-9]|1[0-9]|2[0-8])$/;
+    if (blockedPattern.test(seatNumber)) {
+      res.status(400).json({ success: false, error: `Seats A1-A28 and B1-B28 are not available for booking.` });
       return;
     }
     // Check if seat is already booked
