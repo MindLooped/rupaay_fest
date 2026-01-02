@@ -377,6 +377,9 @@
 </head>
 <body class="min-h-screen">
   
+  <!-- Booking Modals (Email, Verification, Confirmation) -->
+  <!--#include file="booking-modals.html" -->
+  <div id="modals-container"></div>
   <!-- Disclaimer Modal -->
   <div id="disclaimer-modal" class="modal-overlay">
     <div class="modal-content">
@@ -535,6 +538,15 @@
   </div>
 
   <script src="../js/seat-selection.js"></script>
+  <script>
+    // Dynamically load the booking modals HTML
+    fetch('booking-modals.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('modals-container').innerHTML = html;
+      });
+  </script>
+  <script src="../js/secure-booking.js"></script>
   <!-- Mobile Bottom Navigation -->
   <nav class="mobile-bottom-nav md:hidden">
     <a href="index.html"><i class="fas fa-home"></i><div style="font-size:10px">Home</div></a>

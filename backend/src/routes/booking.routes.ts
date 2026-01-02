@@ -4,7 +4,8 @@ import {
   getAvailableSeatsController,
   bookSeatController,
   resendTicketController,
-  seatSelectionValidation
+  seatSelectionValidation,
+  verifyEmailController
 } from '../controllers/booking.controller';
 import rateLimit from 'express-rate-limit';
 
@@ -20,8 +21,12 @@ const bookingLimiter = rateLimit({
 router.get('/available-seats', getAvailableSeatsController);
 router.post('/book-seat', bookingLimiter, seatSelectionValidation, bookSeatController);
 
+
 // Booking retrieval and ticket resend
 router.get('/:reference', getBookingController);
 router.post('/resend-ticket', resendTicketController);
+
+// Email verification
+router.post('/verify-email', verifyEmailController);
 
 export default router;
