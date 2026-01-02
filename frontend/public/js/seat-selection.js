@@ -151,7 +151,10 @@ function generateSeatMap() {
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
       
-      if (bookedSeats.includes(seatNumber)) {
+      if (rowConfig.row === 'A' || rowConfig.row === 'B') {
+        seatDiv.classList.add('blocked');
+        seatDiv.title = 'Not available for booking';
+      } else if (bookedSeats.includes(seatNumber)) {
         seatDiv.classList.add('booked');
       } else {
         seatDiv.classList.add('available');

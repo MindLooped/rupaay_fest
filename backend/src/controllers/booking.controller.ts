@@ -46,7 +46,7 @@ export const getAvailableSeatsController = async (
         seatNumber: true,
       },
     });
-    const bookedSeats = students.map(s => s.seatNumber);
+    const bookedSeats = students.map((s: { seatNumber: string }) => s.seatNumber);
       // Add A1-B28 as booked by default
       const defaultBooked = [];
       for (let row of ['A', 'B']) {
@@ -58,7 +58,7 @@ export const getAvailableSeatsController = async (
       // Merge and deduplicate
       const allBooked = Array.from(new Set([...bookedSeats, ...defaultBooked]));
       res.json({ bookedSeats: allBooked });
-  } catch (error) {
+  } catch (error: any) {
     next(error);
   }
 };
@@ -85,7 +85,7 @@ export const getBookingController = async (
     }
 
     res.json(booking);
-  } catch (error) {
+  } catch (error: any) {
     next(error);
   }
 };
@@ -124,8 +124,13 @@ export const bookSeatController = async (
       return;
     }
 
-    // Check if seat is already booked
+    // Check if seat is in blocked rows
     const seatNumber = students[0].seatNumber;
+    if (seatNumber.startsWith('A') || seatNumber.startsWith('B')) {
+      res.status(400).json({ success: false, error: `Seats in rows A and B are not available for booking.` });
+      return;
+    }
+    // Check if seat is already booked
     const existing = await prisma.student.findFirst({ where: { seatNumber } });
     if (existing) {
       res.status(400).json({ success: false, error: `Seat ${seatNumber} is already booked` });
@@ -188,7 +193,7 @@ export const bookSeatController = async (
       email: booking.email,
       status: booking.status,
       createdAt: booking.createdAt,
-      students: booking.students.map(s => ({
+      students: booking.students.map((s: { name: string; registrationNumber: string; seatNumber: string }) => ({
         name: s.name,
         registrationNumber: s.registrationNumber,
         seatNumber: s.seatNumber
@@ -207,7 +212,8 @@ export const bookSeatController = async (
         students: booking.students,
       },
     });
-  } catch (error) {
+  } catch (error: any) {
+    // eslint-disable-next-line no-console
     console.error('❌ Booking error:', error);
     next(error);
   }
@@ -275,7 +281,8 @@ export const resendTicketController = async (
     console.log('✅ Ticket email resent successfully');
 
     res.json({ success: true, message: 'Ticket email resent successfully' });
-  } catch (error) {
+  } catch (error: any) {
+    // eslint-disable-next-line no-console
     console.error('❌ Resend ticket error:', error);
     next(error);
   }

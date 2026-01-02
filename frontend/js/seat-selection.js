@@ -131,6 +131,7 @@ function generateSeatMap() {
     labelDiv.textContent = rowConfig.row;
     rowDiv.appendChild(labelDiv);
 
+
     // Helper: block rows A and B
     const isBlockedRow = rowConfig.row === 'A' || rowConfig.row === 'B';
 
@@ -142,7 +143,10 @@ function generateSeatMap() {
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
 
-      if (isBlockedRow || bookedSeats.includes(seatNumber)) {
+      if (isBlockedRow) {
+        seatDiv.classList.add('blocked');
+        seatDiv.title = 'Not available for booking';
+      } else if (bookedSeats.includes(seatNumber)) {
         seatDiv.classList.add('booked');
       } else {
         seatDiv.classList.add('available');
@@ -165,7 +169,10 @@ function generateSeatMap() {
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
 
-      if (isBlockedRow || bookedSeats.includes(seatNumber)) {
+      if (isBlockedRow) {
+        seatDiv.classList.add('blocked');
+        seatDiv.title = 'Not available for booking';
+      } else if (bookedSeats.includes(seatNumber)) {
         seatDiv.classList.add('booked');
       } else {
         seatDiv.classList.add('available');
