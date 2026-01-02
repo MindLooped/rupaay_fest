@@ -1,8 +1,6 @@
--- RedefineTables
-PRAGMA defer_foreign_keys=ON;
-PRAGMA foreign_keys=OFF;
-CREATE TABLE "new_bookings" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+-- CreateTable
+CREATE TABLE "bookings" (
+    "id" SERIAL NOT NULL,
     "reference" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
@@ -15,17 +13,42 @@ CREATE TABLE "new_bookings" (
     "event_name" TEXT NOT NULL DEFAULT 'Rupaayi Fest',
     "event_location" TEXT NOT NULL DEFAULT 'Gitam University BLR',
     "venue" TEXT NOT NULL DEFAULT 'Auditorium',
-    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "event_date" DATETIME
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "event_date" TIMESTAMP(3),
+
+    CONSTRAINT "bookings_pkey" PRIMARY KEY ("id")
 );
-INSERT INTO "new_bookings" ("created_at", "email", "event_date", "id", "name", "qr_code", "reference", "status", "tickets_count") SELECT "created_at", "email", "event_date", "id", "name", "qr_code", "reference", "status", "tickets_count" FROM "bookings";
-DROP TABLE "bookings";
-ALTER TABLE "new_bookings" RENAME TO "bookings";
+
+-- CreateTable
+CREATE TABLE "students" (
+    "id" SERIAL NOT NULL,
+    "booking_id" INTEGER NOT NULL,
+    "seat_number" TEXT NOT NULL,
+    "name" TEXT NOT NULL,
+    "registration_number" TEXT NOT NULL,
+    "gitam_email" TEXT NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "students_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateIndex
 CREATE UNIQUE INDEX "bookings_reference_key" ON "bookings"("reference");
+
+-- CreateIndex
 CREATE INDEX "bookings_email_idx" ON "bookings"("email");
+
+-- CreateIndex
 CREATE INDEX "bookings_reference_idx" ON "bookings"("reference");
+
+-- CreateIndex
 CREATE INDEX "bookings_created_at_idx" ON "bookings"("created_at" DESC);
+
+-- CreateIndex
 CREATE UNIQUE INDEX "bookings_email_key" ON "bookings"("email");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "bookings_seat_number_key" ON "bookings"("seat_number");
-PRAGMA foreign_keys=ON;
-PRAGMA defer_foreign_keys=OFF;
+
+-- AddForeignKey
+ALTER TABLE "students" ADD CONSTRAINT "students_booking_id_fkey" FOREIGN KEY ("booking_id") REFERENCES "bookings"("id") ON DELETE CASCADE ON UPDATE CASCADE;
