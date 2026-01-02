@@ -6,6 +6,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import path from 'path';
+import { PrismaClient } from '@prisma/client';
 
 import bookingRoutes from './routes/booking.routes';
 import adminRoutes from './routes/admin.routes';
@@ -67,7 +68,6 @@ if (process.env.NODE_ENV !== 'production') {
   const PORT = process.env.PORT || 4000;
   
   // Book A1 to B28 by default on startup (local only)
-  import { PrismaClient } from '@prisma/client';
   const prisma = new PrismaClient();
   async function bookDefaultSeats() {
     const seatRows = ['A', 'B'];
