@@ -132,18 +132,16 @@ function generateSeatMap() {
     rowDiv.appendChild(labelDiv);
 
 
-    // Helper: block rows A and B
-    const isBlockedRow = rowConfig.row === 'A' || rowConfig.row === 'B';
 
-    // Left side: seats 1 to aisleAfter
-    for (let i = 1; i <= rowConfig.aisleAfter; i++) {
+    // Block all seats in rows A and B (A1-A28, B1-B28)
+    for (let i = 1; i <= rowConfig.seats; i++) {
       const seatNumber = `${rowConfig.row}${i}`;
       const seatDiv = document.createElement('div');
       seatDiv.className = 'seat';
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
 
-      if (isBlockedRow) {
+      if (rowConfig.row === 'A' || rowConfig.row === 'B') {
         seatDiv.classList.add('blocked');
         seatDiv.title = 'Not available for booking';
       } else if (bookedSeats.includes(seatNumber)) {
@@ -153,33 +151,15 @@ function generateSeatMap() {
         seatDiv.addEventListener('click', () => selectSeat(seatNumber));
       }
 
-      rowDiv.appendChild(seatDiv);
-    }
-
-    // Center aisle
-    const aisle = document.createElement('div');
-    aisle.className = 'w-8';
-    rowDiv.appendChild(aisle);
-
-    // Right side: seats (aisleAfter + 1) to total seats
-    for (let i = rowConfig.aisleAfter + 1; i <= rowConfig.seats; i++) {
-      const seatNumber = `${rowConfig.row}${i}`;
-      const seatDiv = document.createElement('div');
-      seatDiv.className = 'seat';
-      seatDiv.textContent = i;
-      seatDiv.setAttribute('data-seat', seatNumber);
-
-      if (isBlockedRow) {
-        seatDiv.classList.add('blocked');
-        seatDiv.title = 'Not available for booking';
-      } else if (bookedSeats.includes(seatNumber)) {
-        seatDiv.classList.add('booked');
+      // Add aisle after the left side
+      if (i === rowConfig.aisleAfter) {
+        rowDiv.appendChild(seatDiv);
+        const aisle = document.createElement('div');
+        aisle.className = 'w-8';
+        rowDiv.appendChild(aisle);
       } else {
-        seatDiv.classList.add('available');
-        seatDiv.addEventListener('click', () => selectSeat(seatNumber));
+        rowDiv.appendChild(seatDiv);
       }
-
-      rowDiv.appendChild(seatDiv);
     }
 
     seatMap.appendChild(rowDiv);
