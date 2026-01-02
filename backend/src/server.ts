@@ -59,49 +59,57 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   });
 });
 
-// Book A1 to B28 by default on startup
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
-async function bookDefaultSeats() {
-  const seatRows = ['A', 'B'];
-  const seatNumbers = [];
-  for (const row of seatRows) {
-    for (let i = 1; i <= 28; i++) {
-      seatNumbers.push(`${row}${i}`);
-    }
-  }
-  for (const seat of seatNumbers) {
-    const exists = await prisma.student.findFirst({ where: { seatNumber: seat } });
-    if (!exists) {
-      // Create a dummy booking for each seat
-      await prisma.booking.create({
-        data: {
-          reference: `DEFAULT-${seat}`,
-          name: `Default User`,
-          email: `default+${seat}@rupaayi.com`,
-          ticketsCount: 1,
-          status: 'confirmed',
-          students: {
-            create: [{
-              seatNumber: seat,
-              name: `Default User`,
-              registrationNumber: 'N/A',
-              gitamEmail: `default+${seat}@rupaayi.com`,
-            }],
-          },
-        },
-      });
-    }
-  }
-}
-bookDefaultSeats().catch(console.error);
+// Export for Vercel serverless
+export default app;
 
-app.listen(PORT, () => {
-  // Initialize CSV file on server start
-  initializeCSV();
+// Only run server locally (not on Vercel)
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 4000;
   
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📧 Email service: ${process.env.SENDGRID_API_KEY ? 'SendGrid' : 'Nodemailer'}`);
-  console.log(`🎫 Event: ${process.env.EVENT_NAME || 'Not configured'}`);
-  console.log(`📊 CSV export: backend/bookings-export.csv`);
-});
+  // Book A1 to B28 by default on startup (local only)
+  import { PrismaClient } from '@prisma/client';
+  const prisma = new PrismaClient();
+  async function bookDefaultSeats() {
+    const seatRows = ['A', 'B'];
+    const seatNumbers = [];
+    for (const row of seatRows) {
+      for (let i = 1; i <= 28; i++) {
+        seatNumbers.push(`${row}${i}`);
+      }
+    }
+    for (const seat of seatNumbers) {
+      const exists = await prisma.student.findFirst({ where: { seatNumber: seat } });
+      if (!exists) {
+        // Create a dummy booking for each seat
+        await prisma.booking.create({
+          data: {
+            reference: `DEFAULT-${seat}`,
+            name: `Default User`,
+            email: `default+${seat}@rupaayi.com`,
+            ticketsCount: 1,
+            status: 'confirmed',
+            students: {
+              create: [{
+                seatNumber: seat,
+                name: `Default User`,
+                registrationNumber: 'N/A',
+                gitamEmail: `default+${seat}@rupaayi.com`,
+              }],
+            },
+          },
+        });
+      }
+    }
+  }
+  bookDefaultSeats().catch(console.error);
+
+  app.listen(PORT, () => {
+    // Initialize CSV file on server start
+    initializeCSV();
+    
+    console.log(`🚀 Server running on http://localhost:${PORT}`);
+    console.log(`📧 Email service: ${process.env.SENDGRID_API_KEY ? 'SendGrid' : 'Nodemailer'}`);
+    console.log(`🎫 Event: ${process.env.EVENT_NAME || 'Not configured'}`);
+    console.log(`📊 CSV export: backend/bookings-export.csv`);
+  });
+}
