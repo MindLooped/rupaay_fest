@@ -1,4 +1,438 @@
-reference,email,status,createdAt,studentName,registrationNumber,seatNumber,eventName,eventDate,venue,paymentId,amount
-BKF847CM,nkandike@gitam.in,confirmed,2025-12-27T17:25:47.664Z,Nasa,1536,I10,Rupaayi Fest 2026,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
-RUPPAAFEST0057,jyerragu@gitam.in,confirmed,2026-01-01T14:23:35.016Z,queer,234,C7,Rupaayi Fest 2026,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
-RUPPAAFEST0057,nkandike@gitam.in,confirmed,2026-01-02T04:00:27.162Z,Asui,234,H9,Rupaayi Fest 2026,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+Booking Reference,GITAM Email,Booking Status,Booked At,Student Name,Registration Number,Seat Number,Event Name,Event Date,Venue,Payment ID,Payment Amount
+DEFAULT-A1,default+A1@rupaayi.com,confirmed,2026-01-02T12:07:50.394Z,Default User,N/A,A1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A2,default+A2@rupaayi.com,confirmed,2026-01-02T12:07:52.349Z,Default User,N/A,A2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A3,default+A3@rupaayi.com,confirmed,2026-01-02T12:07:53.666Z,Default User,N/A,A3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A4,default+A4@rupaayi.com,confirmed,2026-01-02T12:07:54.999Z,Default User,N/A,A4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A5,default+A5@rupaayi.com,confirmed,2026-01-02T12:07:56.341Z,Default User,N/A,A5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A6,default+A6@rupaayi.com,confirmed,2026-01-02T12:07:57.641Z,Default User,N/A,A6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A7,default+A7@rupaayi.com,confirmed,2026-01-02T12:07:58.947Z,Default User,N/A,A7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A8,default+A8@rupaayi.com,confirmed,2026-01-02T12:08:03.604Z,Default User,N/A,A8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A9,default+A9@rupaayi.com,confirmed,2026-01-02T12:08:05.637Z,Default User,N/A,A9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A10,default+A10@rupaayi.com,confirmed,2026-01-02T12:08:06.939Z,Default User,N/A,A10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A11,default+A11@rupaayi.com,confirmed,2026-01-02T12:08:08.243Z,Default User,N/A,A11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A12,default+A12@rupaayi.com,confirmed,2026-01-02T12:08:09.574Z,Default User,N/A,A12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A13,default+A13@rupaayi.com,confirmed,2026-01-02T12:08:10.894Z,Default User,N/A,A13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A14,default+A14@rupaayi.com,confirmed,2026-01-02T12:08:12.195Z,Default User,N/A,A14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A15,default+A15@rupaayi.com,confirmed,2026-01-02T12:08:13.501Z,Default User,N/A,A15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A16,default+A16@rupaayi.com,confirmed,2026-01-02T12:08:14.798Z,Default User,N/A,A16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A17,default+A17@rupaayi.com,confirmed,2026-01-02T12:08:16.189Z,Default User,N/A,A17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A18,default+A18@rupaayi.com,confirmed,2026-01-02T12:08:17.705Z,Default User,N/A,A18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A19,default+A19@rupaayi.com,confirmed,2026-01-02T12:08:19.019Z,Default User,N/A,A19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A20,default+A20@rupaayi.com,confirmed,2026-01-02T12:08:20.326Z,Default User,N/A,A20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A21,default+A21@rupaayi.com,confirmed,2026-01-02T12:08:21.628Z,Default User,N/A,A21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A22,default+A22@rupaayi.com,confirmed,2026-01-02T12:08:23.021Z,Default User,N/A,A22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A23,default+A23@rupaayi.com,confirmed,2026-01-02T12:08:24.326Z,Default User,N/A,A23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A24,default+A24@rupaayi.com,confirmed,2026-01-02T12:08:25.652Z,Default User,N/A,A24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A25,default+A25@rupaayi.com,confirmed,2026-01-02T12:08:27.111Z,Default User,N/A,A25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A26,default+A26@rupaayi.com,confirmed,2026-01-02T12:08:28.456Z,Default User,N/A,A26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A27,default+A27@rupaayi.com,confirmed,2026-01-02T12:08:29.759Z,Default User,N/A,A27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-A28,default+A28@rupaayi.com,confirmed,2026-01-02T12:08:31.112Z,Default User,N/A,A28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B1,default+B1@rupaayi.com,confirmed,2026-01-02T12:08:32.422Z,Default User,N/A,B1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B2,default+B2@rupaayi.com,confirmed,2026-01-02T12:08:33.947Z,Default User,N/A,B2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B3,default+B3@rupaayi.com,confirmed,2026-01-02T12:08:35.261Z,Default User,N/A,B3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B4,default+B4@rupaayi.com,confirmed,2026-01-02T12:08:36.558Z,Default User,N/A,B4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B5,default+B5@rupaayi.com,confirmed,2026-01-02T12:08:37.862Z,Default User,N/A,B5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B6,default+B6@rupaayi.com,confirmed,2026-01-02T12:08:39.160Z,Default User,N/A,B6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B7,default+B7@rupaayi.com,confirmed,2026-01-02T12:08:40.459Z,Default User,N/A,B7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B8,default+B8@rupaayi.com,confirmed,2026-01-02T12:08:41.765Z,Default User,N/A,B8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B9,default+B9@rupaayi.com,confirmed,2026-01-02T12:08:43.088Z,Default User,N/A,B9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B10,default+B10@rupaayi.com,confirmed,2026-01-02T12:08:44.389Z,Default User,N/A,B10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B11,default+B11@rupaayi.com,confirmed,2026-01-02T12:08:45.721Z,Default User,N/A,B11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B12,default+B12@rupaayi.com,confirmed,2026-01-02T12:08:47.057Z,Default User,N/A,B12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B13,default+B13@rupaayi.com,confirmed,2026-01-02T12:08:48.353Z,Default User,N/A,B13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B14,default+B14@rupaayi.com,confirmed,2026-01-02T12:08:49.962Z,Default User,N/A,B14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B15,default+B15@rupaayi.com,confirmed,2026-01-02T12:08:51.268Z,Default User,N/A,B15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B16,default+B16@rupaayi.com,confirmed,2026-01-02T12:08:52.578Z,Default User,N/A,B16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B17,default+B17@rupaayi.com,confirmed,2026-01-02T12:08:53.905Z,Default User,N/A,B17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B18,default+B18@rupaayi.com,confirmed,2026-01-02T12:08:55.214Z,Default User,N/A,B18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B19,default+B19@rupaayi.com,confirmed,2026-01-02T12:08:56.558Z,Default User,N/A,B19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B20,default+B20@rupaayi.com,confirmed,2026-01-02T12:08:57.868Z,Default User,N/A,B20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B21,default+B21@rupaayi.com,confirmed,2026-01-02T12:08:59.179Z,Default User,N/A,B21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B22,default+B22@rupaayi.com,confirmed,2026-01-02T12:09:00.477Z,Default User,N/A,B22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B23,default+B23@rupaayi.com,confirmed,2026-01-02T12:09:01.780Z,Default User,N/A,B23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B24,default+B24@rupaayi.com,confirmed,2026-01-02T12:09:03.079Z,Default User,N/A,B24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B25,default+B25@rupaayi.com,confirmed,2026-01-02T12:09:04.380Z,Default User,N/A,B25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B26,default+B26@rupaayi.com,confirmed,2026-01-02T12:09:05.902Z,Default User,N/A,B26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B27,default+B27@rupaayi.com,confirmed,2026-01-02T12:09:07.221Z,Default User,N/A,B27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+DEFAULT-B28,default+B28@rupaayi.com,confirmed,2026-01-02T12:09:08.541Z,Default User,N/A,B28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0057,rshaik21@gitam.in,confirmed,2026-01-02T13:52:08.710Z,Riya,2023004225,C28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0058,hkl1@student.gitam.edu,confirmed,2026-01-02T14:28:49.477Z,Harshavardhan K L,2025440574,U28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0059,bhemarad@student.gitam.edu,confirmed,2026-01-02T15:50:23.714Z,Bi Bi Disha H,2024202895,M7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0060,vanagha@student.gitam.edu,confirmed,2026-01-02T15:50:43.009Z,Anagha math,2024202876,M8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0061,sjanardh2@gitam.in,confirmed,2026-01-02T15:51:15.886Z,Janardhan,2023000947,H12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0062,tchannab@student.gitam.edu,confirmed,2026-01-02T15:51:56.086Z,Tejaswini NC,2024202323,M9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0063,shussna@student.gitam.edu,confirmed,2026-01-02T15:57:55.464Z,Seemaz hussna,2024202133,M10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0064,nkotamed@student.gitam.edu,confirmed,2026-01-02T16:00:48.931Z,K.Nanda kishore reddy,2024013444,Q3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0065,agopalap@student.gitam.edu,confirmed,2026-01-02T16:02:15.208Z,Akshaya G,2024202755,M11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0066,gkrishna@student.gitam.edu,confirmed,2026-01-02T16:06:07.974Z,Gokul Raj,2024202780,R6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0067,jyerragu@gitam.in,confirmed,2026-01-02T16:09:29.687Z,Y.jaya lakshmi,2023002236,K11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0068,kalavala@gitam.in,confirmed,2026-01-02T16:09:41.100Z,A.Kavya Reddy,2023002485,K10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0069,sgowlima@gitam.in,confirmed,2026-01-02T16:15:54.954Z,Gowli Maheswara Sravanthi,2023002922,K8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0070,achintag@gitam.in,confirmed,2026-01-02T16:15:56.488Z,Chintagumpala Akshaya,2023002820,K9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0071,pkanchar2@gitam.in,confirmed,2026-01-02T16:16:54.434Z,Kancharla poojitha,2023002679,K7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0072,bchoudam@gitam.in,confirmed,2026-01-02T16:19:04.897Z,Choudam Bharath Reddy,2023002823,K6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0073,bdhoola@student.gitam.edu,confirmed,2026-01-02T16:56:12.712Z,Bharath,2024202440,R17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0074,mreddy@student.gitam.edu,confirmed,2026-01-02T17:01:20.070Z,M Devi Prasad Reddy,2025230818,P14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0075,nkalimis@student.gitam.edu,confirmed,2026-01-02T17:01:28.950Z,K.Niharika Sai,2025037866,P12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0076,tkotakon@student.gitam.edu,confirmed,2026-01-02T17:01:36.511Z,K Tharun,2025297441,P13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0077,skanumur@student.gitam.edu,confirmed,2026-01-02T17:02:10.281Z,Sahiti,2024092402,R11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0078,dsingana@student.gitam.edu,confirmed,2026-01-02T17:12:49.825Z,Singana Dinesh reddy,2025208784,P11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0079,snulu@student.gitam.edu,confirmed,2026-01-02T17:13:47.743Z,Syam Santosh nulu,2025123297,P10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0080,yupputur@student.gitam.edu,confirmed,2026-01-02T17:14:01.910Z,U.Yuva kishore,2025204108,P9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0081,gpenujur@student.gitam.edu,confirmed,2026-01-02T17:14:13.884Z,Ganesh Sagar,2025154389,L24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0082,rpujari1@student.gitam.edu,confirmed,2026-01-02T17:28:39.381Z,Pujari Revanth,2025097460,L14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0083,gbhanupr@gitam.in,confirmed,2026-01-02T17:32:41.891Z,G Bhanu Prakash,BU22CSEN0300484,G2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0084,rbalakri@gitam.in,confirmed,2026-01-02T17:32:59.942Z,N B Rachana,BU22CSEN0300505,G1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0085,seruvin2@student.gitam.edu,confirmed,2026-01-02T17:34:39.684Z,Eruvinti sri sahasra,2025031019,L13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0086,dpalla2@student.gitam.edu,confirmed,2026-01-02T17:35:56.753Z,Palla Dhanusha,2025406632,L12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0087,kkalapur@gitam.in,confirmed,2026-01-02T17:39:45.335Z,Thanvi,2023006666,J13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0088,kgaddam3@gitam.in,confirmed,2026-01-02T17:39:54.503Z,GADDAM KAMALESH SAI,2023005553,K16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0089,hgarladi@gitam.in,confirmed,2026-01-02T17:39:58.761Z,Garladinne Harshini,2023004145,J12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0090,vmandala4@gitam.in,confirmed,2026-01-02T17:40:36.986Z,Sai Teja,BU22CIVL0100007,J11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0091,vchakrav@student.gitam.edu,confirmed,2026-01-02T17:42:08.094Z,Ch.Akshaya,2025352358,N9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0092,sswayamp@gitam.in,confirmed,2026-01-02T17:43:01.601Z,Swayampakam sathvika Bramhani,2023005620,K15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0093,tchalla2@gitam.in,confirmed,2026-01-02T17:43:06.930Z,Tanu shree,2023006908,J14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0094,pbirusu@student.gitam.edu,confirmed,2026-01-02T17:43:08.404Z,Birusu sathvika,2025046897,L11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0095,vmuninar@student.gitam.edu,confirmed,2026-01-02T17:43:40.392Z,Vinay Kumar km,2024133141,R22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0096,rmuralid@gitam.in,confirmed,2026-01-02T17:43:42.037Z,Rakshitha M,BU22CSEN0300491,G3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0097,hsunnapu@gitam.in,confirmed,2026-01-02T17:43:45.749Z,HASIKA,BU22CSEN0101755,R24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0098,kbestha@student.gitam.edu,confirmed,2026-01-02T17:43:51.050Z,B.kundana,2024114775,R21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0099,ldoddi1@student.gitam.edu,confirmed,2026-01-02T17:44:04.458Z,DODDI LOHITHA,2025704529,N10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0100,mmollu@student.gitam.edu,confirmed,2026-01-02T17:49:31.038Z,MOLLU MANASA,2025015411,N11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0101,pkasired@gitam.in,confirmed,2026-01-02T17:50:17.008Z,Praneeth,2023007151,J10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0102,rkothako@student.gitam.edu,confirmed,2026-01-02T17:50:24.040Z,Reddy Yeshvitha,2025494419,N8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0103,buppara@student.gitam.edu,confirmed,2026-01-02T17:55:01.621Z,U.Bharath,2024123873,R20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0104,lnagaraj@student.gitam.edu,confirmed,2026-01-02T17:55:23.506Z,N.Likhita,2025029802,N7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0105,hgopal@student.gitam.edu,confirmed,2026-01-02T17:58:45.712Z,Harshini,2025024457,R23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0106,pgaddam@student.gitam.edu,confirmed,2026-01-02T17:59:44.053Z,Parnitha,2025709461,R25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0107,rkuntala@gitam.in,confirmed,2026-01-02T18:18:08.084Z,Raj Kumar,2023002860,R26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0108,sashok@gitam.in,confirmed,2026-01-02T18:20:33.026Z,SUSHMITHA,BU22CSEN0300499,G4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0109,lsagili@student.gitam.edu,confirmed,2026-01-02T18:28:25.310Z,Sagili Lithil,2024110996,H7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0110,rcheviti@student.gitam.edu,confirmed,2026-01-02T18:28:33.847Z,RAHUL REDDY CHEVITI,2024091949,H6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0111,ddinesh@student.gitam.edu,confirmed,2026-01-02T18:28:53.945Z,Doranalapalli dinesh,2024065475,H8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0112,schindi@student.gitam.edu,confirmed,2026-01-02T18:33:33.223Z,Samson,2024071876,H9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0113,jdoranal@student.gitam.edu,confirmed,2026-01-02T18:34:32.015Z,Jaswanth doranalapalli,2025722646,H5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0114,kpanugan@student.gitam.edu,confirmed,2026-01-02T18:44:36.048Z,Kavyahasini,2024106309,H4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0115,mmadhu@student.gitam.edu,confirmed,2026-01-02T18:50:24.566Z,Mokshagna,2024112740,H3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0116,jjinka@student.gitam.edu,confirmed,2026-01-02T18:52:31.345Z,Jinka Jaswanth,2024114547,H10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0117,akammara@student.gitam.edu,confirmed,2026-01-02T18:53:59.222Z,Anu sree,2024041082,H2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0118,smohanku@student.gitam.edu,confirmed,2026-01-02T19:04:45.101Z,Sanjana M,2024202761,J9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0119,yjavili@student.gitam.edu,confirmed,2026-01-02T19:04:53.618Z,Yasasree,2024058604,J6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0120,hvaradar@student.gitam.edu,confirmed,2026-01-02T19:05:28.752Z,Hema Priya,2024072231,J4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0121,gkamsali@student.gitam.edu,confirmed,2026-01-02T19:05:30.619Z,K gnana deepika,2024093310,I3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0122,srajolli@student.gitam.edu,confirmed,2026-01-02T19:05:33.149Z,R Suchitra,2024202244,J5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0123,yamba@student.gitam.edu,confirmed,2026-01-02T19:05:43.817Z,A.Yasasree,2024101664,J7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0124,yaraveti@student.gitam.edu,confirmed,2026-01-02T19:06:56.656Z,A Yashaswini,2024071447,J8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0125,tthanuja@student.gitam.edu,confirmed,2026-01-02T19:15:02.805Z,Thanuja reddy kopperla,2024037279,I4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0126,hmamidip@student.gitam.edu,confirmed,2026-01-02T19:19:32.765Z,M.Harshitha,2024065205,K4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0127,gbhumire@student.gitam.edu,confirmed,2026-01-02T19:19:38.578Z,Geetha vani bhumireddy,2024036972,I5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0128,mpawar@student.gitam.edu,confirmed,2026-01-02T19:21:50.348Z,Mithun Pawar,2024202173,G12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0129,rmadhava@student.gitam.edu,confirmed,2026-01-02T19:23:35.909Z,M.Ruchitha,2024125417,K3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0130,mmandala@student.gitam.edu,confirmed,2026-01-02T19:26:49.149Z,M.Mohan,2024139363,K2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0131,sshaik15@student.gitam.edu,confirmed,2026-01-02T19:34:37.811Z,Shadab S,2025124427,C4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0132,kkaniset@student.gitam.edu,confirmed,2026-01-02T20:01:50.202Z,Kanisetty tharun,2025005066,L25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0133,nbommine@student.gitam.edu,confirmed,2026-01-02T20:04:18.603Z,Nandakishor,2025072295,L23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0134,vdonthi@student.gitam.edu,confirmed,2026-01-02T20:05:31.820Z,Dhanush,2025136665,L22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0135,skotapa2@student.gitam.edu,confirmed,2026-01-02T20:06:06.621Z,K.sree Sainathreddy,2025383874,L26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0136,vchatako@student.gitam.edu,confirmed,2026-01-02T20:06:43.699Z,C Venkata Dinesh,2025097399,L21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0137,hvarnena@student.gitam.edu,confirmed,2026-01-03T00:29:30.306Z,Harsha V N,2024063876,H11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0138,anemani@student.gitam.edu,confirmed,2026-01-03T02:24:39.249Z,N AAKANKSHA,2024087126,K5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0139,jnayak@student.gitam.edu,confirmed,2026-01-03T02:36:44.736Z,Jadhav Nithish Nayak,2024097988,H1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0140,dmandapa@student.gitam.edu,confirmed,2026-01-03T02:39:36.951Z,M.Divya Jyothi,2024065756,K1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0141,sbandaru4@student.gitam.edu,confirmed,2026-01-03T03:43:17.509Z,Sahithi,2024060605,G5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0142,achithir@student.gitam.edu,confirmed,2026-01-03T03:53:11.094Z,Abhinav Sai,2024014293,L3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0143,schedell@student.gitam.edu,confirmed,2026-01-03T04:17:04.689Z,Sai chakradhar,2025281361,O10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0144,bvemana@student.gitam.edu,confirmed,2026-01-03T04:17:13.757Z,Bhanu Teja,2025001606,O9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0145,tmaneesh@student.gitam.edu,confirmed,2026-01-03T04:19:53.676Z,Tanniru Maneesh,2025075494,O8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0146,ssreera1@student.gitam.edu,confirmed,2026-01-03T04:21:24.460Z,Sreeram Venkata Sai Harshith,2025029007,O11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0147,mtalluri@gitam.in,confirmed,2026-01-03T04:27:33.416Z,Meghana,BU22CSEN0600174,H24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0148,jsubrama@student.gitam.edu,confirmed,2026-01-03T04:32:42.581Z,Jahnavi,2025346876,F12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0149,leasamba@gitam.in,confirmed,2026-01-03T04:33:00.487Z,Easambattu Likitha,BU22EECE0100067,H22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0150,ssettipa@student.gitam.edu,confirmed,2026-01-03T04:34:17.097Z,Sheershika,2025520686,F13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0151,bbhavan1@student.gitam.edu,confirmed,2026-01-03T04:35:20.522Z,BHAVANASI SHAMITHA,2025689358,M4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0152,hrajula@student.gitam.edu,confirmed,2026-01-03T04:35:33.457Z,Harsha vardhan reddy,2025531087,F14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0153,btarigon@gitam.in,confirmed,2026-01-03T04:49:24.810Z,T Bhargavi,BU22EECE0100411,H23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0154,nvayugan@student.gitam.edu,confirmed,2026-01-03T04:49:35.051Z,Neelesh,2025030258,O12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0155,ukella@student.gitam.edu,confirmed,2026-01-03T04:54:18.688Z,K usha,2035705838,M5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0156,skanuma1@student.gitam.edu,confirmed,2026-01-03T05:08:12.750Z,Siri k,2025407603,M6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0157,kpunugo2@student.gitam.edu,confirmed,2026-01-03T05:08:48.262Z,Karthik punugoti,2025089113,I18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0158,smaddin2@student.gitam.edu,confirmed,2026-01-03T05:09:40.032Z,MADDINENI SIVAKUMAR,2025249287,E8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0159,ddinesh1@student.gitam.edu,confirmed,2026-01-03T05:09:49.774Z,Dikshitha D,2025726827,I19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0160,pkundalw@student.gitam.edu,confirmed,2026-01-03T05:23:25.462Z,Prachi Kundalwar,2025425304,M3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0161,njha1@student.gitam.edu,confirmed,2026-01-03T05:24:00.166Z,Nikitha jha,202533274,I17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0162,vvellore@student.gitam.edu,confirmed,2026-01-03T05:29:16.661Z,Vellore Rohith,2025714051,M2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0163,mshaik9@student.gitam.edu,confirmed,2026-01-03T05:36:57.750Z,Shaik mohmmad Aahil,2024036728,Q5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0164,pvijayku@student.gitam.edu,confirmed,2026-01-03T05:41:35.087Z,Pallavi V,2024196292,D7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0165,hkrishna@student.gitam.edu,confirmed,2026-01-03T05:42:05.744Z,Harshitha.K,2024202194,D6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0166,achalapa@student.gitam.edu,confirmed,2026-01-03T05:52:49.708Z,Archana.C,2024202217,D8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0167,slaghuva@gitam.in,confirmed,2026-01-03T05:55:19.250Z,S sai laghuvar,2023004212,M17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0168,mlakshmi2@student.gitam.edu,confirmed,2026-01-03T05:55:49.293Z,Meghana N L,2024199315,D5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0169,nmodugu@gitam.in,confirmed,2026-01-03T05:57:06.776Z,MODUGU NIKHIL REDDY,2023003605,M18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0170,schava3@gitam.in,confirmed,2026-01-03T05:58:12.436Z,CHAVA SRI RAM,2023003610,M19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0171,vbandaru8@gitam.in,confirmed,2026-01-03T06:16:16.997Z,B Vamshi krishna,2023003440,M20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0172,vpeddave@gitam.in,confirmed,2026-01-03T06:17:21.307Z,P V VENKAT,2023003625,M21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0173,kmadinen@student.gitam.edu,confirmed,2026-01-03T06:21:11.390Z,Keerthi Surekha,2024001035,G7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0174,aedula@student.gitam.edu,confirmed,2026-01-03T06:23:26.555Z,Aasritha,2024106534,G8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0175,harava@student.gitam.edu,confirmed,2026-01-03T06:37:29.274Z,ARAVA HAFSA,2025691756,I12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0176,rrevanna@student.gitam.edu,confirmed,2026-01-03T06:40:48.510Z,RAMYA K R,2025730523,I13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0177,rturumel@student.gitam.edu,confirmed,2026-01-03T06:42:25.211Z,T RAGHUNADHA RAO,2024109559,M22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0178,srampalli@student.gitam.edu,confirmed,2026-01-03T06:47:00.422Z,Rampalli Srilallitha,2024185270,I11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0179,vgutulu@student.gitam.edu,confirmed,2026-01-03T06:53:01.457Z,Vaishnavi G,2024197122,I10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0180,gmarathi@student.gitam.edu,confirmed,2026-01-03T06:54:35.911Z,Gayathri bai M,2024197126,I9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0181,dchowdur@student.gitam.edu,confirmed,2026-01-03T06:57:30.428Z,Dheeraja C,2024202027,I8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0182,tcharan@student.gitam.edu,confirmed,2026-01-03T07:22:01.608Z,charan,2024028143,L16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0183,mbommann@student.gitam.edu,confirmed,2026-01-03T07:22:25.584Z,Mokshith reddy,2024102527,L17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0184,dtammine@student.gitam.edu,confirmed,2026-01-03T07:22:44.480Z,TAMMINEEDI DURGA SAMBA SIVA VARA PRASAD,2024116417,L15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0185,bchandan@student.gitam.edu,confirmed,2026-01-03T07:25:09.540Z,Chandan Balaji,2024053106,Q4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0186,knunna@student.gitam.edu,confirmed,2026-01-03T07:26:18.241Z,Karthikeya vyaschand,2024036728,I16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0187,akatta1@student.gitam.edu,confirmed,2026-01-03T07:37:06.215Z,Katta abhiraami reddy,2025064871,K19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0188,preddy1@student.gitam.edu,confirmed,2026-01-03T07:37:24.118Z,PILAPALYAM RUCHITHA REDDY,2025268801,H15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0189,nchithul@student.gitam.edu,confirmed,2026-01-03T07:37:43.713Z,C Neeraja,2025412611,H16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0190,nkumar10@gitam.in,confirmed,2026-01-03T07:38:17.196Z,Ajay kumar,2023005163,J23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0191,mgm@student.gitam.edu,confirmed,2026-01-03T07:41:21.472Z,Monisha gm,2024019486,U2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0192,ssudeer@student.gitam.edu,confirmed,2026-01-03T07:43:48.931Z,Sudeer venkata deepshik,2025482905,K20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0193,ggagana@gitam.in,confirmed,2026-01-03T07:44:02.488Z,Golla Gagana,2023004966,O1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0194,hganapar@student.gitam.edu,confirmed,2026-01-03T07:44:24.368Z,G.Harshitha,2025545020,U3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0195,kchappid2@gitam.in,confirmed,2026-01-03T07:44:48.666Z,Chappidi Kalyan Sai,BU22CSEN0500158,O2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0196,nnukala1@student.gitam.edu,confirmed,2026-01-03T07:53:12.295Z,nukala mani bharath,2025266522,K21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0197,cgangara@student.gitam.edu,confirmed,2026-01-03T07:53:20.107Z,Chaithra.G,2025134575,T4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0198,pgunda2@student.gitam.edu,confirmed,2026-01-03T07:53:22.031Z,GUNDA PRASANTH ANAND,2025314358,T2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0199,svurivak@student.gitam.edu,confirmed,2026-01-03T07:53:33.335Z,V Sai sree,2025014189,T3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0200,amandapa@student.gitam.edu,confirmed,2026-01-03T08:00:08.463Z,Anish Raj M.R,2025049681,U4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0201,ppallela@student.gitam.edu,confirmed,2026-01-03T08:00:09.245Z,Pallela punith reddy,2025450552,K22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0202,mmayana@gitam.edu,confirmed,2026-01-03T08:00:14.697Z,MAYANA MOHAMMED ZAID KHAN,2025203388,K23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0203,sabburu@student.gitam.edu,confirmed,2026-01-03T08:00:18.248Z,Abburu Sohitha,2025330971,T5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0204,ykapatr2@student.gitam.edu,confirmed,2026-01-03T08:00:26.103Z,Kapatrala yoshithhae,2025014177,T6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0205,sporedd1@gitam.edu,confirmed,2026-01-03T08:02:23.069Z,Poreddy santhosh reddy,2025266522,K24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0206,bdharmar@gitam.in,confirmed,2026-01-03T08:02:25.452Z,Bhavani,Bu22cseno102184,O3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0207,sshaik11@student.gitam.edu,confirmed,2026-01-03T08:10:11.570Z,Shaik mohammad anas,2025464280,K26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0208,alukka@student.gitam.edu,confirmed,2026-01-03T08:10:15.061Z,LUKKA AASRITA,2025264333,T7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0209,rshaik17@student.gitam.edu,confirmed,2026-01-03T08:11:04.990Z,SHAIK RIYAZ,2025312129,T8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0210,srupanag2@gitam.in,confirmed,2026-01-03T08:11:18.458Z,Akshaya,2023005192,O4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0211,cgopicha@student.gitam.edu,confirmed,2026-01-03T08:16:53.526Z,chandaluri venkata gopichand,2025280184,K25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0212,smekala1@gitam.edu,confirmed,2026-01-03T08:31:55.390Z,Mekala Srinivas,2025511976,K18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0213,kmidhun@student.gitam.edu,confirmed,2026-01-03T08:35:09.956Z,k midhun,2025214664,K27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0214,dpagadal@student.gitam.edu,confirmed,2026-01-03T08:39:56.200Z,Dhatri Royal pagadala,2025330361,T1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0215,nkosuru@gitam.in,confirmed,2026-01-03T08:43:37.008Z,K. Nikhitha,2023004125,J19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0216,sneerati@gitam.in,confirmed,2026-01-03T08:44:58.584Z,Shreya Neerati,2023006422,J20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0217,vkumar10@gitam.in,confirmed,2026-01-03T08:46:56.836Z,JAHNAVI T,2023006414,M14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0218,ashaik43@gitam.in,confirmed,2026-01-03T08:46:57.967Z,Shaik Afreen,2023004116,J18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0219,jtoluchu@gitam.in,confirmed,2026-01-03T08:48:20.927Z,VIRAT K,2023007244,M13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0220,vam@gitam.in,confirmed,2026-01-03T08:48:37.537Z,A.M Vaishnavi,2023006463,J21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0221,smeda6@gitam.in,confirmed,2026-01-03T08:49:36.025Z,M sony sree,2023005238,J16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0222,cchappal@student.gitam.edu,confirmed,2026-01-03T09:01:58.169Z,C.V.Chaithanya Kumar,2025412579,T9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0223,kboyapat@student.gitam.edu,confirmed,2026-01-03T09:03:29.365Z,Boyapati Karthika,2025543148,H19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0224,bbindusu@gitam.in,confirmed,2026-01-03T09:03:34.908Z,Bandla Bindu Supriya,2023006056,J17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0225,vkarakam@gitam.in,confirmed,2026-01-03T09:04:46.097Z,K.V.Manasa,2023006057,J15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0226,bsaripir@student.gitam.edu,confirmed,2026-01-03T09:09:44.570Z,Bhavan,2024057891,U1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0227,yrangar2@student.gitam.edu,confirmed,2026-01-03T09:17:01.748Z,Rangareddygari yasashwini,2025399993,H18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0228,pbellam@student.gitam.edu,confirmed,2026-01-03T09:18:48.604Z,Pavan,2024004379,U5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0229,mmohamm1@student.gitam.edu,confirmed,2026-01-03T09:30:05.857Z,Mohammad Amaaan,2025331473,F19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0230,ssikanda@student.gitam.edu,confirmed,2026-01-03T09:31:09.175Z,Shabaz sikandar v,2025147034,F18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0231,sesikala@gitam.in,confirmed,2026-01-03T09:31:22.740Z,Sai roopak,2023004499,L8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0232,danilkum2025@student.gitam.edu,confirmed,2026-01-03T09:31:33.912Z,Darshan A,2025330447,F17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0233,rgaddam3@gitam.in,confirmed,2026-01-03T09:47:18.698Z,Roshini Krishna sri,2023004167,J22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0234,kkotthur@student.gitam.edu,confirmed,2026-01-03T10:07:13.941Z,Gowtham,2025176825,I22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0235,mmarkiri@student.gitam.edu,confirmed,2026-01-03T10:07:27.840Z,M.manoj kumar reddy,2025347363,I25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0236,saketi2@student.gitam.edu,confirmed,2026-01-03T10:07:36.746Z,Aketi Saranya,2025406517,I24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0237,laviligo@student.gitam.edu,confirmed,2026-01-03T10:07:54.453Z,A.lakshmi sai,2025591519,I23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0238,syerri2@student.gitam.edu,confirmed,2026-01-03T10:08:44.627Z,Y.Spandana,2025130797,H20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0239,vsrinath@student.gitam.edu,confirmed,2026-01-03T10:34:57.300Z,Vivek s,2024077728,E14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0240,spokala@student.gitam.edu,confirmed,2026-01-03T11:09:29.412Z,P. Srikanth,2025680191,L20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0241,amynam@student.gitam.edu,confirmed,2026-01-03T11:10:50.317Z,M.ABINAY,2025188323,L18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0242,sareddyp@gitam.in,confirmed,2026-01-03T11:36:45.903Z,Puneeth Kumar,2023001238,N5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0243,aayyasab@student.gitam.edu,confirmed,2026-01-03T11:45:06.236Z,Ayyasabgari mohammad Ashad,2025384468,H17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0244,kreddy1@student.gitam.edu,confirmed,2026-01-03T12:06:04.715Z,K Sravan Kumar Reddy,2025089598,I26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0245,pkondapa@student.gitam.edu,confirmed,2026-01-03T12:07:12.724Z,Prudhvi,2025419504,I21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0246,lthippin@student.gitam.edu,confirmed,2026-01-03T12:08:25.736Z,Lokesh,2025334998,I20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0247,dgolugur@student.gitam.edu,confirmed,2026-01-03T12:17:41.623Z,Deepika. G,2024202205,L4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0248,crasagna@student.gitam.edu,confirmed,2026-01-03T12:20:09.150Z,Rasagnya chalasani,2024202456,L5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0249,pnagasud@gitam.in,confirmed,2026-01-03T12:25:48.425Z,Sudheer,2023004429,J24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0250,vmarthal@gitam.in,confirmed,2026-01-03T12:29:59.457Z,Vishnu,2023004681,J25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0251,jgonugun@student.gitam.edu,confirmed,2026-01-03T12:44:14.332Z,Gonuguntla Jahnavi,2025384475,N17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0252,achapiri@student.gitam.edu,confirmed,2026-01-03T12:47:00.981Z,Chapirimatam Akshitha,2025014190,N16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0253,npatan@gitam.in,confirmed,2026-01-03T12:47:20.042Z,PATAN NASREEN,Bu22csen0300221,G15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0254,nguluru@gitam.in,confirmed,2026-01-03T12:53:44.767Z,Nandeesha,BU22CSEN0300530,N18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0255,nbysani@gitam.in,confirmed,2026-01-03T12:53:49.272Z,Bysani Navya Sree,BU22CSEN0300287,G16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0256,kgangadh@gitam.in,confirmed,2026-01-03T13:00:16.548Z,Kiran G,BU22CSEN0300546,N19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0257,akukatla@gitam.in,confirmed,2026-01-03T13:02:50.067Z,Kukatla Aishwarya,BU22CSEN0300222,N20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0258,ataslem@gitam.in,confirmed,2026-01-03T13:03:12.458Z,Arifa,BU22CSEN0300242,N21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0259,npujari@student.gitam.edu,confirmed,2026-01-03T13:17:40.935Z,P.Nandeesh,2024193300,P20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0260,rdarsi@student.gitam.edu,confirmed,2026-01-03T13:19:31.789Z,Rajesh,2024038135,P21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0261,vpichipa@gitam.in,confirmed,2026-01-03T13:23:17.118Z,Dhanunjay,2023004873,J27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0262,vkoppara2@gitam.in,confirmed,2026-01-03T13:23:19.790Z,Hemanth Kopparapu,2023004647,J26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0263,dthirann@gitam.in,confirmed,2026-01-03T13:30:22.248Z,Thirannagari Deepthi,2023004630,Q11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0264,eshankar@student.gitam.edu,confirmed,2026-01-03T13:46:19.346Z,Enakanti Dharani shankar,2025263531,F15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0265,hgopal2@gitam.in,confirmed,2026-01-03T13:47:05.680Z,Harsha G,BU22CSEN0300539,N24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0266,pmeghana@student.gitam.edu,confirmed,2026-01-03T14:09:43.104Z,M Padma Meghana,2024002926,G17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0267,brafik@student.gitam.edu,confirmed,2026-01-03T14:09:51.164Z,Rafik Basha Bahaar,2024027054,G18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0268,bmandla@student.gitam.edu,confirmed,2026-01-03T14:12:16.908Z,Bhargav,2024007335,G19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0269,asaddala@student.gitam.edu,confirmed,2026-01-03T14:14:55.611Z,Anusha,202474652,G20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0270,syanugon@student.gitam.edu,confirmed,2026-01-03T14:16:17.396Z,Poojitha,2024016305,G21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0271,asatrava@student.gitam.edu,confirmed,2026-01-03T14:25:27.473Z,Abhiram,2024204200,G22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0272,smatti@student.gitam.edu,confirmed,2026-01-03T14:26:32.161Z,Matti sireesha,2025391448,F11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0273,hakepogu@student.gitam.edu,confirmed,2026-01-03T14:26:53.927Z,Harshitha,2025166180,G24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0274,sshamil@student.gitam.edu,confirmed,2026-01-03T14:27:18.013Z,Shifa Anjum.S,2024027060,G23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0275,akamana2@student.gitam.edu,confirmed,2026-01-03T14:28:38.165Z,Vinay,2025159683,G25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0276,vburugup@student.gitam.edu,confirmed,2026-01-03T14:40:35.845Z,Vighna Shree,2025446970,G27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0277,kkuruvad@student.gitam.edu,confirmed,2026-01-03T14:42:44.025Z,K pramod rahul,2025439173,G26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0278,dsantosh@student.gitam.edu,confirmed,2026-01-03T14:46:43.176Z,Dulam pardu venkata santosh,2025227787,G28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0279,pkundan2@student.gitam.edu,confirmed,2026-01-03T14:55:35.460Z,Pranitha,2025392626,P6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0280,gmukthap@student.gitam.edu,confirmed,2026-01-03T14:55:56.519Z,M.Greeshma Reddy,2025205127,P5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0281,mvayalpa@student.gitam.edu,confirmed,2026-01-03T14:57:03.897Z,Vayalpati Manisha,2025075415,P4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0282,mpaluru2@student.gitam.edu,confirmed,2026-01-03T14:57:16.184Z,PALURU MANUSREE,2025377852,P2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0283,spoola@student.gitam.edu,confirmed,2026-01-03T14:58:52.656Z,Sai Swetha,2025322891,P3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0284,pmithik2@student.gitam.edu,confirmed,2026-01-03T14:59:46.882Z,Lekhana,202514847,P7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0285,vmittimi@student.gitam.edu,confirmed,2026-01-03T15:11:00.475Z,Vishnu,2024120321,U15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0286,shussai3@student.gitam.edu,confirmed,2026-01-03T15:21:09.285Z,Shaik jawwad,2025421189,U16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0287,schitti3@student.gitam.edu,confirmed,2026-01-03T15:26:56.565Z,Chittmireddy Harshitha,2025312397,L10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0288,mpunugo2@student.gitam.edu,confirmed,2026-01-03T15:34:01.277Z,Punugoti Muni Sai Kalyan,2025017374,O19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0289,vboliset@student.gitam.edu,confirmed,2026-01-03T15:35:45.861Z,B Venkata subhash,2025718759,O20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0290,ggunredd@student.gitam.edu,confirmed,2026-01-03T15:37:23.462Z,Sai Charan,2025090827,O18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0291,sachukat@student.gitam.edu,confirmed,2026-01-03T15:37:47.341Z,Sahil ashraf,2025715677,O21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0292,mmadduru@student.gitam.edu,confirmed,2026-01-03T15:42:05.163Z,M Naga Kiran,2025090923,O17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0293,sbabu2@student.gitam.edu,confirmed,2026-01-03T15:42:14.899Z,SINCHANA B,2025712005,J1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0294,spala1@student.gitam.edu,confirmed,2026-01-03T15:43:02.796Z,P Sri Varsha,2025725884,J2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0295,cchappid@student.gitam.edu,confirmed,2026-01-03T15:44:50.909Z,Harsha Vardhan reddy,2025722885,O22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0296,tgunji2@student.gitam.edu,confirmed,2026-01-03T15:47:02.474Z,tirish gunji,2025518849,O23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0297,vmanapat@student.gitam.edu,confirmed,2026-01-03T15:55:29.351Z,Manapati venu,2025557844,O26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0298,vgogula1@student.gitam.edu,confirmed,2026-01-03T15:55:32.068Z,Gogula venu,2025004723,F28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0299,rutukuru@student.gitam.edu,confirmed,2026-01-03T15:55:36.142Z,U raghuvardhan reddy,2025466580,O24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0300,syellat1@student.gitam.edu,confirmed,2026-01-03T15:55:37.369Z,Yellaturu Sivadeep Reddy,2025201352,O25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0301,pmuddan2@student.gitam.edu,confirmed,2026-01-03T15:57:38.124Z,M pavan kumar reddy,2025004703,D23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0302,breddy2@student.gitam.edu,confirmed,2026-01-03T15:58:35.088Z,B vardhan reddy,2025708711,O27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0303,bbeemire@student.gitam.edu,confirmed,2026-01-03T16:14:17.512Z,B sudheer kumar reddy,2025691886,O28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0304,nreddy7@student.gitam.edu,confirmed,2026-01-03T16:18:20.719Z,N.venkateswara reddy,2025306913,O16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0305,kputtur2@student.gitam.edu,confirmed,2026-01-03T16:18:58.672Z,P Kalyan,2025557844,O15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0306,vbandar1@student.gitam.edu,confirmed,2026-01-03T16:28:17.265Z,vamsi krishna bandaru,2025111180,O7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0307,snb@gitam.in,confirmed,2026-01-03T16:45:09.793Z,SINDHU NB,2023006975,S4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0308,shalli@student.gitam.edu,confirmed,2026-01-03T16:46:50.950Z,SHARADA,2024202856,S5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0309,psharana@student.gitam.edu,confirmed,2026-01-03T16:52:12.736Z,Pushpa,2025730702,S6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0310,spatil3@student.gitam.edu,confirmed,2026-01-03T16:54:17.695Z,Sunitha,2025730706,S7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0311,bbasava1@student.gitam.edu,confirmed,2026-01-03T16:56:21.550Z,Bhavana,2025703648,S8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0312,vrupangu@student.gitam.edu,confirmed,2026-01-03T17:33:23.197Z,Rupangudi venkatesh,2024017074,R7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0313,rpatra@student.gitam.edu,confirmed,2026-01-03T17:35:22.632Z,G Ritesh Kumar Patra,2024042820,R8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0314,lgalivet@student.gitam.edu,confirmed,2026-01-03T17:41:31.405Z,Lokesh,2024014417,N4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0315,pavula@student.gitam.edu,confirmed,2026-01-03T17:45:05.751Z,Praveen,2024164799,Q6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0316,lavula@student.gitam.edu,confirmed,2026-01-03T17:45:55.445Z,Sai,2024111023,Q7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0317,abiradar2@student.gitam.edu,confirmed,2026-01-03T18:44:20.557Z,Abhishek C Biradar,2024202235,U9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0318,sfadi@student.gitam.edu,confirmed,2026-01-03T18:44:44.151Z,Shankar Vijay Fadi,2024202230,U7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0319,skalkoti@student.gitam.edu,confirmed,2026-01-03T18:45:09.342Z,Sinchana B kalkoti,2024202179,U8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0320,rgopalkr@student.gitam.edu,confirmed,2026-01-03T19:51:08.478Z,Rathan G,2024102691,F4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0321,mramagon@student.gitam.edu,confirmed,2026-01-04T02:14:17.587Z,Mohith RS,2024202202,F5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0322,ygunda@student.gitam.edu,confirmed,2026-01-04T04:53:39.959Z,G Yasaswini,2024086874,M23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0323,mbommish@student.gitam.edu,confirmed,2026-01-04T04:53:41.511Z,Maitri.b,2024196459,M24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0324,schakram@student.gitam.edu,confirmed,2026-01-04T04:54:52.983Z,CHAKRAM SAI RISHITHA KRISHNA,2024004197,M25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0325,syaradod@student.gitam.edu,confirmed,2026-01-04T04:55:17.574Z,Y Sai Vinuthna,2024086899,M26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0326,sballa2@student.gitam.edu,confirmed,2026-01-04T05:56:37.268Z,Balla Sushmitha,2024064312,E18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0327,hchandra@student.gitam.edu,confirmed,2026-01-04T05:56:52.766Z,KC Harshitha,2024156984,E16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0328,tyacham@student.gitam.edu,confirmed,2026-01-04T05:57:05.274Z,Yacham Tara,2024031360,E17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0329,nbatnapa@student.gitam.edu,confirmed,2026-01-04T05:58:44.127Z,Nandini B,2024113279,E15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0330,kkunchal@student.gitam.edu,confirmed,2026-01-04T06:01:29.460Z,KH Mohitha,2024162331,D28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0331,sarigela@student.gitam.edu,confirmed,2026-01-04T06:42:19.718Z,Sharanya A,2024029887,E19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0332,snemani2@student.gitam.edu,confirmed,2026-01-04T06:50:19.212Z,Sai Krishna N,2025246672,I27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0333,mnagara1@student.gitam.edu,confirmed,2026-01-04T06:50:27.652Z,Mukesh,2025256651,I28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0334,avijayak@student.gitam.edu,confirmed,2026-01-04T07:05:06.874Z,Ajith v bagali,2024202255,F6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0335,arameshb@student.gitam.edu,confirmed,2026-01-04T07:21:58.080Z,Anushka R,2024202449,S3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0336,syellapa@student.gitam.edu,confirmed,2026-01-04T08:03:32.563Z,Y SRIYAHVI,2025391832,E6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0337,prubiya@student.gitam.edu,confirmed,2026-01-04T08:03:49.766Z,Rubiya,2025051698,E4,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0338,kkummar3@student.gitam.edu,confirmed,2026-01-04T08:04:13.779Z,K.kumari,2025599966,E3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0339,mdeepthy@student.gitam.edu,confirmed,2026-01-04T08:04:31.964Z,M. Deepthy,2025495808,E7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0340,kshaik2@student.gitam.edu,confirmed,2026-01-04T08:04:33.000Z,S. K. Mehar,2025527052,E5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0341,lbinguma2@gitam.in,confirmed,2026-01-04T08:40:30.320Z,Bingumalla Lakshmi Greeshmitha,2023005752,P23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0342,hkankana2@gitam.in,confirmed,2026-01-04T08:40:56.184Z,Harshitha Reddy,2023005456,P26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0343,sgali3@gitam.in,confirmed,2026-01-04T08:41:00.293Z,Gali Sreya,2023005757,P25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0344,adudekul2@gitam.in,confirmed,2026-01-04T08:41:06.428Z,Afreen,2023006028,P24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0345,psanishe@gitam.in,confirmed,2026-01-04T08:41:39.302Z,Sanishetty Pushpa,2023005790,P27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0346,uchari@student.gitam.edu,confirmed,2026-01-04T08:55:59.560Z,Unnati Chari,2024034270,D9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0347,dgullari@student.gitam.edu,confirmed,2026-01-04T08:56:00.892Z,Dimple Sree,2024062015,F10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0348,skollu@student.gitam.edu,confirmed,2026-01-04T08:56:23.058Z,K.Sevitha Ram,2024162256,F9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0349,akallur2@student.gitam.edu,confirmed,2026-01-04T10:22:10.014Z,Kalluru Asif,2025320205,K12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0350,hthaman2@student.gitam.edu,confirmed,2026-01-04T10:22:21.456Z,Thamanameni Harsha,2025093796,K13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0351,srvspoor@student.gitam.edu,confirmed,2026-01-04T11:33:08.589Z,Spoorthi RV,2025353222,U12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0352,skuradag@student.gitam.edu,confirmed,2026-01-04T11:33:18.802Z,Sinchana .k,2025726317,U11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0353,vmahante@student.gitam.edu,confirmed,2026-01-04T11:37:28.625Z,Vaishnavi mahantesh hubballi,2025708723,U10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0354,kkuruba1@student.gitam.edu,confirmed,2026-01-04T11:49:25.162Z,K.Kavya,2025726602,U13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0355,crasappa@student.gitam.edu,confirmed,2026-01-04T11:56:11.743Z,Rasappagari Chandrika,2024204239,P22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0356,jkarampr@student.gitam.edu,confirmed,2026-01-04T11:56:33.920Z,KP JAGADISH,2025726290,Q15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0357,dmaheshw@student.gitam.edu,confirmed,2026-01-04T12:13:35.374Z,Darshan M,2025730766,R14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0358,jgavured@student.gitam.edu,confirmed,2026-01-04T12:33:54.871Z,Jathin Reddy,2025698550,L27,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0359,sprakhya@student.gitam.edu,confirmed,2026-01-04T12:53:37.419Z,Saikaushik Prakhya,2025726789,Q16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0360,nrabba@student.gitam.edu,confirmed,2026-01-04T12:58:38.889Z,Rabba Naveen,2025545148,O14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0361,ppeddibo@student.gitam.edu,confirmed,2026-01-04T13:13:19.798Z,P.rishik yadav,2025200969,D1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0362,ngalla@student.gitam.edu,confirmed,2026-01-04T13:13:46.888Z,G.Nikitha,2025228629,S10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0363,blingare@student.gitam.edu,confirmed,2026-01-04T13:18:04.890Z,L.bharath siva reddy,2025293317,S11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0364,vvuragay@student.gitam.edu,confirmed,2026-01-04T13:19:48.937Z,V.harshitha,2025082452,S9,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0365,mymohamm@student.gitam.edu,confirmed,2026-01-04T13:20:57.766Z,Y.Mohammad Sufyaan,2025089683,S12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0366,pboddu@student.gitam.edu,confirmed,2026-01-04T13:28:44.990Z,Boddu. Prasanth,2025081437,S13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0367,uuppara@student.gitam.edu,confirmed,2026-01-04T13:33:39.703Z,Uppara siva swapnil,2025092299,S14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0368,sjogipat@student.gitam.edu,confirmed,2026-01-04T13:50:45.268Z,Sai Teja,2025538968,L19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0369,vjampana@student.gitam.edu,confirmed,2026-01-04T14:11:20.355Z,Varun,2024004778,U17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0370,skesire1@student.gitam.edu,confirmed,2026-01-04T14:12:24.171Z,Srija,2025351094,U18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0371,mgovind1@student.gitam.edu,confirmed,2026-01-04T14:19:42.040Z,Mohan Gowda G,2025726660,Q17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0372,kreddy4@student.gitam.edu,confirmed,2026-01-04T14:33:19.020Z,k.Reswanthnath Reddy,2025203033,N15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0373,hbaddela@student.gitam.edu,confirmed,2026-01-04T14:59:14.404Z,Himesh B,2025227579,T13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0374,dram@student.gitam.edu,confirmed,2026-01-04T15:02:23.486Z,Daiwik Ram,2025152025,Q14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0375,achitram@student.gitam.edu,confirmed,2026-01-04T15:02:41.871Z,Chitram Akshara,2025454153,Q13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0376,ksavaram@student.gitam.edu,confirmed,2026-01-04T15:05:22.172Z,Savaram kushal,2025259222,R1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0377,sginkala@student.gitam.edu,confirmed,2026-01-04T15:06:42.714Z,Sasi kiran,2025026914,Q12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0378,zshaik2@student.gitam.edu,confirmed,2026-01-04T15:14:39.823Z,Zahir shaik,2025228794,R2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0379,kreddy5@student.gitam.edu,confirmed,2026-01-04T15:22:43.502Z,K V S AKHILESH REDDY,2025518826,L6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0380,apolu@student.gitam.edu,confirmed,2026-01-04T15:30:30.911Z,Polu Abhilash kumar reddy,2025135068,P15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0381,mkoduru@student.gitam.edu,confirmed,2026-01-04T15:33:25.842Z,K. Mytra varun achari,2025091937,P16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0382,vveluru1@student.gitam.edu,confirmed,2026-01-04T15:39:11.434Z,V Gowtham krishna,2025385619,P17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0383,gthati@student.gitam.edu,confirmed,2026-01-04T15:54:33.656Z,Thatiganesh,2025318891,P18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0384,rdodda2@student.gitam.edu,confirmed,2026-01-04T15:56:21.932Z,D Ramakrishna,2025272695,R5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0385,sbulle2@student.gitam.edu,confirmed,2026-01-04T15:56:37.803Z,Sree krishna madhurya,2025015942,R3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0386,mreddy5@student.gitam.edu,confirmed,2026-01-04T16:01:39.901Z,Mittapally dheeraj reddy,2025105427,K14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0387,nnagaman@student.gitam.edu,confirmed,2026-01-04T16:02:57.960Z,Yashwanth,2025385500,F2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0388,ggidutu2@student.gitam.edu,confirmed,2026-01-04T16:02:59.761Z,G Praveen,2025414201,F1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0389,kmattapt@student.gitam.edu,confirmed,2026-01-04T16:22:26.583Z,M.Kiran Kumar,2025730682,Q1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0390,gudbal@student.gitam.edu,confirmed,2026-01-04T16:23:18.134Z,Gouthama udbal,2025730642,Q2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0391,svattiku2@student.gitam.edu,confirmed,2026-01-04T16:25:34.654Z,V Shamanth,2024202881,C1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0392,hnarasan@student.gitam.edu,confirmed,2026-01-04T16:56:18.289Z,Hemanth,2025053373,O6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0393,rkengana@student.gitam.edu,confirmed,2026-01-04T16:57:29.793Z,Rama lakshmana,2025200385,O5,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0394,pmanchal@student.gitam.edu,confirmed,2026-01-04T17:06:21.477Z,M.preetham,2025521243,N6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0395,dvirupak@student.gitam.edu,confirmed,2026-01-04T17:15:30.229Z,Darshan.c,2025730722,I7,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0396,dramacha@student.gitam.edu,confirmed,2026-01-04T17:22:04.326Z,Dhanush.R.S,2025708805,I6,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0397,vbeegams@student.gitam.edu,confirmed,2026-01-04T17:24:32.855Z,Vivek B.S,2025730719,I2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0398,rreddy6@student.gitam.edu,confirmed,2026-01-04T17:26:28.369Z,Raghavendra reddy,2025730555,I1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0399,yjangam@student.gitam.edu,confirmed,2026-01-04T17:34:53.595Z,J Yasaswini,2025352694,E20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0400,mswamy@student.gitam.edu,confirmed,2026-01-04T17:37:47.442Z,Manoj cs,2025726377,S24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0401,rmoorthy@student.gitam.edu,confirmed,2026-01-04T17:37:48.464Z,Ram prasad,2025726694,S23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0402,vcheekat@student.gitam.edu,confirmed,2026-01-04T17:37:56.815Z,C Vaishnavi Reddy,2025041839,E21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0403,kreddy10@student.gitam.edu,confirmed,2026-01-04T17:42:57.039Z,K Virupakshi Reddy,2025730744,S22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0404,pkumar5@student.gitam.edu,confirmed,2026-01-04T17:50:22.932Z,Praveen kumar,2025726619,S21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0405,ksaik@student.gitam.edu,confirmed,2026-01-04T17:56:01.389Z,Kamal,2025725277,T15,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0406,dsudhak1@student.gitam.edu,confirmed,2026-01-04T17:56:16.251Z,Dharmesha H S,2025727069,S20,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0407,gkadamal@student.gitam.edu,confirmed,2026-01-04T17:57:44.266Z,Sagar,2025727435,T16,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0408,ybacchu@student.gitam.edu,confirmed,2026-01-04T17:59:23.512Z,Yeshwanth,2025728514,T17,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0409,hiruve@student.gitam.edu,confirmed,2026-01-04T18:15:19.241Z,Thiruveedhi Jithesh,2025720607,S18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0410,dmohamme@student.gitam.edu,confirmed,2026-01-04T18:30:31.742Z,Mohammed Danish,2025726232,N13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0411,shampapu@student.gitam.edu,confirmed,2026-01-04T18:30:36.319Z,H G SAMARTH RAM,2025730160,O13,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0412,hnaduman@student.gitam.edu,confirmed,2026-01-04T18:55:10.314Z,Hanumantha N,2025300162,N14,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0413,mmanabha@student.gitam.edu,confirmed,2026-01-05T02:14:22.478Z,Mahantesh,2025726636,J3,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0414,sdanamre@student.gitam.edu,confirmed,2026-01-05T02:43:27.846Z,Sai charitha reddy,2025186526,F8,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0415,sudaya@student.gitam.edu,confirmed,2026-01-05T03:37:20.437Z,Sujan,2025726718,S25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0416,sgouda1@student.gitam.edu,confirmed,2026-01-05T03:44:57.553Z,Shanth Gouda,2025726604,Q23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0417,ks@gitam.in,confirmed,2026-01-05T03:46:42.793Z,Kusuma s,2023007226,N23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0418,rprabhu@gitam.in,confirmed,2026-01-05T03:46:54.502Z,Rakshitabhandari,2023007332,N22,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0419,jthiruma@student.gitam.edu,confirmed,2026-01-05T04:35:47.590Z,T jaswanth reddy,2025585201,C2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0420,apujar@student.gitam.edu,confirmed,2026-01-05T05:19:54.629Z,Anjali P,2024202495,L1,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0421,gbalnedi@student.gitam.edu,confirmed,2026-01-05T05:22:20.726Z,Geetika,2024202870,L2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0422,vduddeku@student.gitam.edu,confirmed,2026-01-05T05:27:17.623Z,Vinay kumar,2024202937,Q18,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0423,bkogundi@student.gitam.edu,confirmed,2026-01-05T06:08:50.567Z,BHUVANESHWARI kb,2025702181,S28,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0424,llomada@student.gitam.edu,confirmed,2026-01-05T06:32:20.114Z,L.sai lokesh,2025205231,C11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0425,nnunna2@student.gitam.edu,confirmed,2026-01-05T06:56:27.039Z,Nunna deekshitha,2025037186,C10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0426,spathaka@gitam.in,confirmed,2026-01-05T07:10:08.735Z,Bharath,BU22CSEN0101174,N2,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0427,nmanjun1@student.gitam.edu,confirmed,2026-01-05T07:37:34.067Z,Naveen,2025726747,S26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0428,jthiruve@student.gitam.edu,confirmed,2026-01-05T08:09:19.280Z,Thiruveedhi jithesh,2025720607,S19,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0429,hchauhan@student.gitam.edu,confirmed,2026-01-05T08:21:35.734Z,Harshit Chauhan,2025459447,E24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0430,ddharani@student.gitam.edu,confirmed,2026-01-05T08:49:19.583Z,DHARANI,2025585155,U21,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0431,hfiroz@student.gitam.edu,confirmed,2026-01-05T08:49:31.600Z,Hajeera anam noorain FM,2025529634,U25,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0432,fburjapa@student.gitam.edu,confirmed,2026-01-05T08:49:33.127Z,B S FARYA TASKEEN,2025706409,U26,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0433,pkelakop@student.gitam.edu,confirmed,2026-01-05T08:49:34.105Z,Pranamya K S,2025473203,U24,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0434,npurohit@student.gitam.edu,confirmed,2026-01-05T08:50:05.249Z,Purohit Nagasree,2025651833,U23,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0435,hmunira1@student.gitam.edu,confirmed,2026-01-05T09:28:05.072Z,Harsha Vardhan DM,2025675104,T12,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0436,snaraya3@student.gitam.edu,confirmed,2026-01-05T09:28:15.643Z,Shinchana N,2025731454,T10,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0
+RUPPAAFEST0437,rthekkal@student.gitam.edu,confirmed,2026-01-05T09:28:20.339Z,Raghavi T,2025730758,T11,Rupaayi Fest,"January 7, 2026","Auditorium, Gitam University BLR",N/A,0

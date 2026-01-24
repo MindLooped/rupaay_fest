@@ -31,6 +31,15 @@ const SEATING_LAYOUT = [
   { row: 'S', seats: 28, aisleAfter: 14 },
   { row: 'T', seats: 28, aisleAfter: 14 },
   { row: 'U', seats: 28, aisleAfter: 14 },
+  // Balcony Section
+  { row: 'A', seats: 26, aisleAfter: 13, section: 'Balcony' },
+  { row: 'B', seats: 26, aisleAfter: 13, section: 'Balcony' },
+  { row: 'C', seats: 28, aisleAfter: 14, section: 'Balcony' },
+  { row: 'D', seats: 28, aisleAfter: 14, section: 'Balcony' },
+  { row: 'E', seats: 28, aisleAfter: 14, section: 'Balcony' },
+  { row: 'F', seats: 28, aisleAfter: 14, section: 'Balcony' },
+  { row: 'G', seats: 28, aisleAfter: 14, section: 'Balcony' },
+  { row: 'H', seats: 28, aisleAfter: 14, section: 'Balcony' },
 ];
 
 const ROWS = SEATING_LAYOUT.map(r => r.row);
@@ -133,7 +142,22 @@ function generateSeatMap() {
   const seatMap = document.getElementById('seat-map');
   seatMap.innerHTML = '';
   
-  SEATING_LAYOUT.forEach(rowConfig => {
+  let lastSection = null;
+  
+  SEATING_LAYOUT.forEach((rowConfig, index) => {
+    // Add section header for Balcony
+    if (rowConfig.section && rowConfig.section !== lastSection) {
+      const sectionHeader = document.createElement('div');
+      sectionHeader.className = 'w-full text-center mt-8 mb-6';
+      sectionHeader.innerHTML = `
+        <div class="bg-white border-t-2 border-b-2 border-gray-300 py-4">
+          <span class="text-xl font-bold text-gray-800 tracking-wide">BALCONY</span>
+        </div>
+      `;
+      seatMap.appendChild(sectionHeader);
+      lastSection = rowConfig.section;
+    }
+    
     const rowDiv = document.createElement('div');
     rowDiv.className = 'seat-row flex items-center gap-1 justify-center';
     
@@ -143,15 +167,19 @@ function generateSeatMap() {
     labelDiv.textContent = rowConfig.row;
     rowDiv.appendChild(labelDiv);
     
-    // Block all seats in rows A and B (A1-A28, B1-B28)
+    // Generate seat identifier based on section
+    const seatPrefix = rowConfig.section ? `${rowConfig.section.charAt(0)}${rowConfig.row}` : rowConfig.row;
+    
+    // Block all seats in ground floor rows A and B only (not balcony A and B)
     for (let i = 1; i <= rowConfig.seats; i++) {
-      const seatNumber = `${rowConfig.row}${i}`;
+      const seatNumber = `${seatPrefix}${i}`;
       const seatDiv = document.createElement('div');
       seatDiv.className = 'seat';
       seatDiv.textContent = i;
       seatDiv.setAttribute('data-seat', seatNumber);
 
-      if (rowConfig.row === 'A' || rowConfig.row === 'B') {
+      if ((rowConfig.row === 'A' || rowConfig.row === 'B') && !rowConfig.section) {
+        // Only block ground floor A and B, not balcony
         seatDiv.classList.add('blocked');
         seatDiv.title = 'Not available for booking';
       } else if (bookedSeats.includes(seatNumber)) {
