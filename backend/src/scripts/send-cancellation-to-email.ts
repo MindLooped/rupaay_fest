@@ -73,7 +73,7 @@ async function sendCancellationToEmail(email: string) {
       reference: booking.reference,
       ticketsCount: booking.students.length,
       eventName: booking.eventName,
-      eventDate: booking.eventDate || '7th January 2026',
+      eventDate: booking.eventDate || '27th January 2026',
       seatNumbers: seatNumbers
     };
 

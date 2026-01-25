@@ -79,7 +79,7 @@ async function exportAllBookings() {
             escapeCSVField(student.registrationNumber),
             escapeCSVField(student.seatNumber),
             escapeCSVField('Rupaayi Fest'),
-            escapeCSVField('January 7, 2026'),
+            escapeCSVField('27th January 2026'),
             escapeCSVField('Auditorium, Gitam University BLR'),
             escapeCSVField('N/A'),
             escapeCSVField(0)

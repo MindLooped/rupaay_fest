@@ -299,7 +299,7 @@ export async function createBookingWithSeat(input: {
     ticketsCount: seatNumbers.length,
     qrCode,
     eventName: 'Rupaayi Fest',
-    eventDate: 'January 7, 2026',
+    eventDate: '27th January 2026',
     seatNumber,
     venue: 'Auditorium, Gitam University BLR',
   }).catch((err) => console.error('Email send failed:', err));
@@ -371,7 +371,7 @@ export async function createBookingWithSeats(input: {
     createdAt: booking.createdAt,
     students: students,
     eventName: 'Rupaayi Fest',
-    eventDate: 'January 7, 2026',
+    eventDate: '27th January 2026',
     venue: 'Auditorium, Gitam University BLR',
     paymentId: paymentId,
     paymentAmount: paymentAmount || 0

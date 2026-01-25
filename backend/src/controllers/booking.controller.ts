@@ -200,7 +200,7 @@ export const bookSeatController = async (
         seatNumber: s.seatNumber
       })),
       eventName: 'Rupaayi Fest 2026',
-      eventDate: 'January 7, 2026',
+      eventDate: '27th January 2026',
       venue: 'Auditorium, Gitam University BLR'
     });
 
