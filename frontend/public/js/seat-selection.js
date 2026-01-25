@@ -436,7 +436,15 @@ function showGitamEmailPopup(students) {
         }),
       });
       
-      const orderData = await orderResponse.json();
+      // Check if response is JSON
+      const contentType = orderResponse.headers.get('content-type');
+      let orderData;
+      if (contentType && contentType.includes('application/json')) {
+        orderData = await orderResponse.json();
+      } else {
+        const text = await orderResponse.text();
+        throw new Error(text || 'Server returned non-JSON response');
+      }
       
       if (!orderData.success) {
         throw new Error(orderData.error || 'Failed to create payment order');
@@ -462,7 +470,15 @@ function showGitamEmailPopup(students) {
           }),
         });
         
-        const bookingData = await bookingResponse.json();
+        // Check if response is JSON
+        const bookingContentType = bookingResponse.headers.get('content-type');
+        let bookingData;
+        if (bookingContentType && bookingContentType.includes('application/json')) {
+          bookingData = await bookingResponse.json();
+        } else {
+          const text = await bookingResponse.text();
+          throw new Error(text || 'Server returned non-JSON response');
+        }
         
         console.log('🎯 Booking API Response:', bookingData);
         
@@ -543,7 +559,15 @@ function showGitamEmailPopup(students) {
             }),
           });
           
-          const verifyData = await verifyResponse.json();
+          // Check if response is JSON
+          const verifyContentType = verifyResponse.headers.get('content-type');
+          let verifyData;
+          if (verifyContentType && verifyContentType.includes('application/json')) {
+            verifyData = await verifyResponse.json();
+          } else {
+            const text = await verifyResponse.text();
+            throw new Error(text || 'Server returned non-JSON response');
+          }
           
           if (!verifyData.success) {
             throw new Error('Payment verification failed');
@@ -567,7 +591,15 @@ function showGitamEmailPopup(students) {
             }),
           });
           
-          const bookingData = await bookingResponse.json();
+          // Check if response is JSON
+          const bookingContentType = bookingResponse.headers.get('content-type');
+          let bookingData;
+          if (bookingContentType && bookingContentType.includes('application/json')) {
+            bookingData = await bookingResponse.json();
+          } else {
+            const text = await bookingResponse.text();
+            throw new Error(text || 'Server returned non-JSON response');
+          }
           
           console.log('🎯 Booking API Response:', bookingData);
           
