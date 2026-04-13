@@ -400,8 +400,8 @@ function showGitamEmailPopup(students) {
       return;
     }
     
-    if (!email.endsWith('@gitam.in') && !email.endsWith('@gitam.edu')) {
-      errorText.textContent = 'Please enter a valid GITAM email (ending with @gitam.in or @gitam.edu)';
+    if (!email.endsWith('@gitam.in') && !email.endsWith('@gitam.edu') && !email.endsWith('@student.gitam.edu')) {
+      errorText.textContent = 'Please enter a valid GITAM email (ending with @gitam.in, @gitam.edu, or @student.gitam.edu)';
       errorDiv.classList.remove('hidden');
       return;
     }
