@@ -1,4 +1,4 @@
-const API_URL = 'https://rupaay-fest-backend.vercel.app';
+const API_URL = '/api';
 
 let selectedSeats = [];
 let bookedSeats = [];

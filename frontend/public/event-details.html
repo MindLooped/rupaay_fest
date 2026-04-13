@@ -175,7 +175,7 @@
 
   <script>
     // Fetch available seats
-    fetch('https://rupaay-fest-backend.vercel.app/api/admin/stats', {
+    fetch('/api/admin/stats', {
       headers: { 'Authorization': 'Bearer admin123' }
     })
     .then(r => r.json())
