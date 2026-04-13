@@ -63,11 +63,12 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 // Export for Vercel serverless
 export default app;
 
-// Only run server locally (not on Vercel)
-if (process.env.NODE_ENV !== 'production') {
+const shouldStartServer = !process.env.VERCEL;
+
+if (shouldStartServer) {
   const PORT = process.env.PORT || 4000;
-  
-  // Book A1 to B28 by default on startup (local only)
+
+  // Book A1 to B28 by default on startup for any self-hosted runtime.
   const prisma = new PrismaClient();
   async function bookDefaultSeats() {
     const seatRows = ['A', 'B'];
@@ -80,7 +81,6 @@ if (process.env.NODE_ENV !== 'production') {
     for (const seat of seatNumbers) {
       const exists = await prisma.student.findFirst({ where: { seatNumber: seat } });
       if (!exists) {
-        // Create a dummy booking for each seat
         await prisma.booking.create({
           data: {
             reference: `DEFAULT-${seat}`,
@@ -101,12 +101,12 @@ if (process.env.NODE_ENV !== 'production') {
       }
     }
   }
+
   bookDefaultSeats().catch(console.error);
 
   app.listen(PORT, () => {
-    // Initialize CSV file on server start
     initializeCSV();
-    
+
     console.log(`🚀 Server running on http://localhost:${PORT}`);
     console.log(`📧 Email service: ${process.env.SENDGRID_API_KEY ? 'SendGrid' : 'Nodemailer'}`);
     console.log(`🎫 Event: ${process.env.EVENT_NAME || 'Not configured'}`);
