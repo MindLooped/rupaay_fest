@@ -96,13 +96,16 @@ async function sendCancellationToAll() {
         const seatNumbers = booking.students.map(s => s.seatNumber).join(', ');
         
         // Prepare email data
+        const eventDateStr = booking.eventDate 
+          ? new Date(booking.eventDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+          : '27th January 2026';
         const emailData: CancellationEmailData = {
           name: booking.name,
           email: booking.email,
           reference: booking.reference,
           ticketsCount: booking.students.length,
           eventName: booking.eventName,
-          eventDate: booking.eventDate || '27th January 2026',
+          eventDate: eventDateStr,
           seatNumbers: seatNumbers
         };
 

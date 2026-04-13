@@ -4,7 +4,9 @@ import {
   getAvailableSeatsController,
   bookSeatController,
   resendTicketController,
-  seatSelectionValidation
+  seatSelectionValidation,
+  sendVerificationCodeController,
+  verifyCodeController,
 } from '../controllers/booking.controller';
 import rateLimit from 'express-rate-limit';
 
@@ -15,6 +17,16 @@ const bookingLimiter = rateLimit({
   max: 5, // 5 bookings per IP
   message: 'Too many booking attempts, please try again later',
 });
+
+const verificationLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 5, // 5 attempts per IP
+  message: 'Too many verification attempts, please try again later',
+});
+
+// Verification routes
+router.post('/send-verification', verificationLimiter, sendVerificationCodeController);
+router.post('/verify-code', verificationLimiter, verifyCodeController);
 
 // Seat selection routes
 router.get('/available-seats', getAvailableSeatsController);

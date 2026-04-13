@@ -219,6 +219,122 @@ export const bookSeatController = async (
     next(error);
   }
 };
+// Send verification code to email
+export const sendVerificationCodeController = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const { email } = req.body;
+
+    if (!email || !email.match(/@gitam\.(in|edu)$/)) {
+      res.status(400).json({ 
+        success: false, 
+        error: 'Please use a valid GITAM email address (@gitam.in or @gitam.edu)' 
+      });
+      return;
+    }
+
+    // Generate random 6-digit verification code
+    const verificationCode = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
+
+    // Store or update verification in database
+    await prisma.booking.upsert({
+      where: { email },
+      update: { 
+        verificationCode,
+      },
+      create: {
+        reference: `TEMP-${Date.now()}`,
+        email,
+        name: 'Pending Verification',
+        ticketsCount: 0,
+        verificationCode,
+        status: 'pending',
+      },
+    });
+
+    // Send verification code via email
+    const verificationHTML = `
+      <div style="font-family: Arial, sans-serif; max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+        <h2 style="color: #333;">Email Verification</h2>
+        <p>Your verification code is:</p>
+        <div style="background: #f0f0f0; padding: 15px; border-radius: 5px; text-align: center; margin: 20px 0;">
+          <h1 style="color: #e74c3c; margin: 0; letter-spacing: 5px;">${verificationCode}</h1>
+        </div>
+        <p style="color: #666; font-size: 14px;">This code will expire in 10 minutes.</p>
+        <p style="color: #999; font-size: 12px;">If you didn't request this, please ignore this email.</p>
+      </div>
+    `;
+
+    await sendEmail({
+      to: email,
+      subject: '🔐 Your Event Verification Code',
+      html: verificationHTML,
+    });
+
+    res.json({ 
+      success: true, 
+      message: 'Verification code sent to your email' 
+    });
+  } catch (error: any) {
+    console.error('❌ Verification code error:', error);
+    next(error);
+  }
+};
+
+// Verify code sent to email
+export const verifyCodeController = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const { email, code } = req.body;
+
+    if (!email || !code) {
+      res.status(400).json({ 
+        success: false, 
+        error: 'Email and code are required' 
+      });
+      return;
+    }
+
+    // Find booking with matching email and code
+    const booking = await prisma.booking.findFirst({
+      where: {
+        email,
+        verificationCode: code,
+      },
+    });
+
+    if (!booking) {
+      res.status(401).json({ 
+        success: false, 
+        error: 'Invalid verification code' 
+      });
+      return;
+    }
+
+    // Mark as verified
+    await prisma.booking.update({
+      where: { id: booking.id },
+      data: { isVerified: true },
+    });
+
+    res.json({ 
+      success: true, 
+      message: 'Email verified successfully',
+      email,
+    });
+  } catch (error: any) {
+    console.error('❌ Verification error:', error);
+    next(error);
+  }
+};
+
 export const resendTicketController = async (
   req: Request,
   res: Response,
