@@ -1,5 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import * as bookingService from '../services/booking.service';
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
 
 export async function getAllBookingsController(req: Request, res: Response, next: NextFunction) {
   try {
@@ -39,6 +42,30 @@ export async function exportBookingsController(req: Request, res: Response, next
     res.setHeader('Content-Disposition', 'attachment; filename=bookings.csv');
     res.send(csv);
   } catch (error) {
+    next(error);
+  }
+}
+
+export async function clearAllBookingsController(req: Request, res: Response, next: NextFunction) {
+  try {
+    console.log('🧹 Admin clearing all bookings...');
+    
+    // Delete all students first (due to foreign key constraint)
+    const deletedStudents = await prisma.student.deleteMany({});
+    console.log(`✅ Deleted ${deletedStudents.count} student records`);
+    
+    // Delete all bookings
+    const deletedBookings = await prisma.booking.deleteMany({});
+    console.log(`✅ Deleted ${deletedBookings.count} booking records`);
+    
+    res.json({ 
+      success: true, 
+      message: 'All bookings cleared successfully',
+      deletedBookings: deletedBookings.count,
+      deletedStudents: deletedStudents.count,
+    });
+  } catch (error) {
+    console.error('❌ Error clearing bookings:', error);
     next(error);
   }
 }
