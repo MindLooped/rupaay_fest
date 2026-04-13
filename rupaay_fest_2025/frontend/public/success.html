@@ -363,7 +363,7 @@
       btn.textContent = '📤 Sending...';
       
       try {
-        const response = await fetch('http://localhost:4000/api/bookings/resend-ticket', {
+        const response = await fetch('/api/bookings/resend-ticket', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
